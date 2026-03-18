@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Noval Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--deep-forest:#1B4332;--emerald:#2D6A4F;--sage:#52B788;--mint:#D8F3DC;--warm-gold:#B68D40;--gold-light:#D4A853;--off-white:#F8F9FA;--light-grey:#E9ECEF;--text-primary:#1B1B1B;--text-secondary:#555;--text-muted:#888;--font-heading:'DM Serif Display',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--font-mono:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text-primary);background:#fff}
+
+/* Nav */
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:#fff;border-bottom:1px solid var(--light-grey);position:sticky;top:0;z-index:999}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep-forest)}
+.nav-logo img{width:40px;height:40px;object-fit:contain}
+.nav-logo span{font-family:var(--font-heading);font-size:24px}
+.logo-invert{filter:brightness(0) invert(1)}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{text-decoration:none;color:var(--text-secondary);font-size:15px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--deep-forest)}
+.nav-links a.active{color:var(--deep-forest);font-weight:600}
+
+/* Buttons */
+.btn{display:inline-block;padding:12px 28px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.btn-primary{background:var(--deep-forest);color:#fff}
+.btn-primary:hover{background:var(--emerald)}
+.btn-gold{background:var(--warm-gold);color:#fff}
+.btn-gold:hover{background:var(--gold-light)}
+.btn-outline{background:transparent;color:var(--deep-forest);border:2px solid var(--deep-forest)}
+.btn-outline:hover{background:var(--deep-forest);color:#fff}
+.btn-white{background:#fff;color:var(--deep-forest);font-weight:700}
+.btn-white:hover{background:var(--mint)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+/* Shared section helpers */
+.section-label{font-family:var(--font-mono);font-size:12px;color:var(--warm-gold);text-transform:uppercase;letter-spacing:2.5px;font-weight:500;margin-bottom:12px}
+.section-title{font-family:var(--font-heading);font-size:38px;color:var(--deep-forest);margin-bottom:16px}
+
+/* Page hero */
+.page-hero{background:var(--deep-forest);padding:80px 60px;color:#fff;text-align:center}
+.page-hero .section-label{color:var(--gold-light)}
+.page-hero h1{font-family:var(--font-heading);font-size:52px;color:#fff;margin-bottom:20px}
+.page-hero p{font-size:18px;line-height:1.65;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto}
+
+/* Profile section */
+.profile{padding:100px 60px;max-width:1200px;margin:0 auto}
+.profile-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:start}
+.profile-image img{width:100%;border-radius:12px;display:block;object-fit:cover;aspect-ratio:3/4}
+.profile-image .image-placeholder{width:100%;aspect-ratio:3/4;border-radius:12px;background:var(--mint);display:flex;align-items:center;justify-content:center;color:var(--sage);font-size:14px;border:2px dashed var(--sage)}
+.profile-content p{font-size:16px;line-height:1.75;color:var(--text-secondary);margin-bottom:20px}
+.profile-content .btn{margin-top:8px}
+
+/* Stats band */
+.stats-band{background:var(--off-white);border-top:1px solid var(--light-grey);border-bottom:1px solid var(--light-grey);padding:60px}
+.stats-band-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.stat-item{text-align:center}
+.stat-item .stat-number{font-family:var(--font-heading);font-size:44px;color:var(--deep-forest);margin-bottom:8px}
+.stat-item .stat-label{font-size:14px;color:var(--text-secondary);line-height:1.4}
+
+/* Origin */
+.origin{background:var(--deep-forest);padding:80px 60px;color:#fff}
+.origin-inner{max-width:800px;margin:0 auto;text-align:center}
+.origin .section-label{color:var(--gold-light)}
+.origin blockquote{font-family:var(--font-heading);font-size:26px;color:#fff;line-height:1.5;margin-bottom:20px;font-style:italic}
+.origin .attribution{font-size:14px;color:rgba(255,255,255,.5)}
+
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--deep-forest) 0%,var(--emerald) 60%,var(--sage) 100%);padding:100px 60px;text-align:center;color:#fff}
+.cta-section h2{font-family:var(--font-heading);font-size:40px;margin-bottom:16px}
+.cta-section p{font-size:18px;opacity:.85;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
+.cta-buttons{display:flex;gap:16px;justify-content:center}
+
+/* Footer */
+footer{background:#0D2818;color:rgba(255,255,255,.7);padding:60px 60px 30px}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:50px;margin-bottom:50px}
+.footer-brand p{font-size:14px;line-height:1.6;margin-top:16px;color:rgba(255,255,255,.5)}
+footer h4{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold-light);margin-bottom:18px;font-weight:600}
+footer a{display:block;color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;margin-bottom:10px;transition:color .2s}
+footer a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;font-size:13px;color:rgba(255,255,255,.35)}
+
+/* Responsive */
+@media(max-width:900px){
+  nav{padding:16px 24px}
+  .page-hero{padding:60px 24px}
+  .page-hero h1{font-size:38px}
+  .profile{padding:60px 24px}
+  .profile-grid{grid-template-columns:1fr;gap:40px}
+  .stats-band{padding:40px 24px}
+  .stats-band-inner{grid-template-columns:1fr 1fr;gap:24px}
+  .origin{padding:60px 24px}
+  .cta-section{padding:60px 24px}
+  footer{padding:40px 24px 20px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="index.html" class="nav-logo">
+<img src="noval-icon.png" alt="Noval Icon" width="40" height="40">
+<span>Noval</span></a>
+<div class="nav-links">
+<a href="index.html#services">Services</a>
+<a href="about.html" class="active">About</a>
+<a href="index.html#insights">Insights</a>
+<a href="#contact" class="btn btn-primary" style="padding:10px 24px;font-size:14px">Book a Consultation</a>
+</div></nav>
+
+<section class="page-hero">
+<div class="section-label">Who We Are</div>
+<h1>About Noval</h1>
+<p>Battle-tested AI leadership, built on 15 years at the enterprise frontier.</p>
+</section>
+
+<section class="profile">
+<div class="profile-grid">
+<div class="profile-image">
+<img src="IMG_0913.jpeg" alt="Eoin Lane, Founder of Noval Consultancy">
+</div>
+<div class="profile-content">
+<div class="section-label">Founder &amp; Principal</div>
+<h2 class="section-title">Eoin Lane</h2>
+<p>A seasoned AI executive with a proven track record of delivering transformative, enterprise-scale AI solutions. Renowned for leading global teams of data scientists and engineers, Eoin combines cutting-edge AI technologies, design thinking, and engineering excellence to create scalable and responsible AI applications.</p>
+<p>Eoin is a recipient of multiple industry awards, including being shortlisted for the prestigious Gartner Eye on Innovation Awards (2020 &amp; 2022). He spearheaded the establishment of a &euro;8 million Digital R&amp;D Hub in Dublin, recognised by IDA Ireland, positioning BNY Mellon at the forefront of AI, data science, and emerging technologies — including quantum computing.</p>
+<p>An IBM Master Inventor, Eoin holds over 70 patents and patents pending, alongside several dozen publications, showcasing deep technical expertise and a sustained commitment to innovation.</p>
+<p>With a passion for driving impactful AI solutions, Eoin now leads Noval Consultancy, helping businesses unlock the full potential of artificial intelligence while navigating the complexities of compliance and governance.</p>
+<a href="https://www.linkedin.com/in/eoinlane" target="_blank" rel="noopener" class="btn btn-primary">Connect on LinkedIn</a>
+</div>
+</div>
+</section>
+
+<div class="stats-band">
+<div class="stats-band-inner">
+<div class="stat-item">
+<div class="stat-number">15</div>
+<div class="stat-label">Years leading AI strategy &amp; delivery</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">70+</div>
+<div class="stat-label">Patents &amp; patents pending</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">2x</div>
+<div class="stat-label">Gartner Eye on Innovation shortlist</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">&euro;8M</div>
+<div class="stat-label">Digital R&amp;D Hub established at BNY Mellon Dublin</div>
+</div>
+</div>
+</div>
+
+<section class="origin">
+<div class="origin-inner">
+<img src="noval-icon.png" alt="Noval" width="60" height="60" style="margin-bottom:24px;opacity:.3;filter:brightness(0) invert(1)">
+<div class="section-label" style="color:var(--gold-light)">Our Name</div>
+<blockquote>Inspired by Nohoval Cove's untouched beauty in County Cork, Noval reflects AI's vast, uncharted potential. Like the cove's raw landscape, AI offers boundless opportunities that require thoughtful navigation.</blockquote>
+<p class="attribution">The Noval Story &mdash; Where nature meets innovation</p>
+</div>
+</section>
+
+<section class="cta-section" id="contact">
+<h2>Ready to Navigate AI with Confidence?</h2>
+<p>Whether you're preparing for EU AI Act compliance or building your AI strategy from scratch, we're here to guide you.</p>
+<div class="cta-buttons">
+<a href="mailto:info@novalconsultancy.com" class="btn btn-white">Get in Touch</a>
+<a href="index.html#services" class="btn btn-gold">View Our Services</a>
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+<img src="noval-icon.png" alt="Noval" width="32" height="32" class="logo-invert">
+<span style="font-family:var(--font-heading);font-size:20px;color:#fff">Noval</span>
+</div>
+<p>Empowering businesses to harness AI responsibly while navigating the complexities of compliance and governance.</p>
+</div>
+<div><h4>Services</h4>
+<a href="index.html#services">EU AI Act Compliance</a>
+<a href="index.html#services">AI Strategy &amp; Governance</a>
+<a href="index.html#services">AI Readiness</a></div>
+<div><h4>Company</h4>
+<a href="about.html">About</a>
+<a href="index.html#insights">Insights</a>
+<a href="#contact">Contact</a></div>
+<div><h4>Get in Touch</h4>
+<a href="mailto:info@novalconsultancy.com">info@novalconsultancy.com</a>
+<a href="tel:+353830270372">+353 83 027 0372</a>
+</div></div>
+<div class="footer-bottom">
+<span>&copy; 2026 Noval Consultancy. All rights reserved.</span>
+<span>Dublin, Ireland</span>
+</div></footer>
+
+</body>
+</html>
