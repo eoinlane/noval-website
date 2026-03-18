@@ -52,7 +52,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6
 .cs-meta-item:last-child{margin-bottom:0}
 .cs-meta-label{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);margin-bottom:6px}
 .cs-meta-value{font-size:15px;font-weight:600;color:var(--text-primary);line-height:1.4}
-.cs-tag{display:inline-block;background:var(--mint);color:var(--deep-forest);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px}
+.cs-tag{display:inline-block;background:var(--mint);color:var(--deep-forest);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;margin-bottom:6px;margin-right:4px}
 
 /* Main content */
 .cs-content h2{font-family:var(--font-heading);font-size:32px;color:var(--deep-forest);margin-bottom:12px;line-height:1.2}
@@ -63,16 +63,16 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6
 .cs-section p:last-child{margin-bottom:0}
 
 /* Work items */
-.work-items{list-style:none;display:flex;flex-direction:column;gap:20px}
-.work-item{display:flex;gap:20px;align-items:flex-start;background:var(--off-white);border-radius:10px;padding:24px;border:1px solid var(--light-grey)}
-.work-item-icon{width:36px;height:36px;border-radius:8px;background:var(--deep-forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.work-item-body h4{font-size:15px;font-weight:700;color:var(--deep-forest);margin-bottom:6px}
-.work-item-body p{font-size:14px;line-height:1.65;color:var(--text-secondary);margin:0}
+.work-items{list-style:none;display:flex;flex-direction:column;gap:24px}
+.work-item{display:flex;gap:20px;align-items:flex-start;background:var(--off-white);border-radius:10px;padding:28px;border:1px solid var(--light-grey)}
+.work-item-icon{width:40px;height:40px;border-radius:8px;background:var(--deep-forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.work-item-body h4{font-size:16px;font-weight:700;color:var(--deep-forest);margin-bottom:10px;line-height:1.3}
+.work-item-body p{font-size:14px;line-height:1.7;color:var(--text-secondary);margin:0}
 
 /* Outcome box */
-.outcome-box{background:var(--deep-forest);border-radius:12px;padding:36px;color:#fff}
-.outcome-box h3{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--gold-light);margin-bottom:16px}
-.outcome-box p{font-size:16px;line-height:1.75;color:rgba(255,255,255,.85);margin-bottom:14px}
+.outcome-box{background:var(--deep-forest);border-radius:12px;padding:40px;color:#fff}
+.outcome-box h3{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--gold-light);margin-bottom:20px}
+.outcome-box p{font-size:16px;line-height:1.8;color:rgba(255,255,255,.85);margin-bottom:16px}
 .outcome-box p:last-child{margin-bottom:0}
 
 /* CTA */
@@ -134,7 +134,10 @@ footer a:hover{color:#fff}
 </div>
 <div class="cs-meta-item">
 <div class="cs-meta-label">Sector</div>
-<div><span class="cs-tag">EdTech</span></div>
+<div>
+<span class="cs-tag">EdTech</span>
+<span class="cs-tag">EU AI Act</span>
+</div>
 </div>
 <div class="cs-meta-item">
 <div class="cs-meta-label">Engagement</div>
@@ -149,74 +152,92 @@ footer a:hover{color:#fff}
 
 <div class="cs-content">
 <div class="section-label">Case Study 01</div>
-<h2>AI-Powered EdTech Platform for Irish Secondary Education</h2>
-<p class="cs-intro">Helping Diotima build a curriculum-aligned AI tutoring platform purpose-built for the Leaving Certificate — where generic AI tools consistently fall short on Irish context, language, and assessment rubrics.</p>
+<h2>Diotima — AI-Powered Formative Assessment Platform for Irish Secondary Education</h2>
+<p class="cs-intro">Helping Diotima build a compliance-grade, curriculum-aligned AI formative assessment platform purpose-built for the Leaving Certificate — where generic AI tools fail on Irish context, and where EU AI Act obligations shaped every architectural decision from day one.</p>
 
 <div class="cs-section">
 <h3>Background</h3>
-<p>Diotima set out to build an AI-powered educational platform tailored to the Irish secondary school curriculum, specifically targeting Leaving Certificate alignment. The challenge was significant: Ireland's curriculum is highly specific, and generic AI tools consistently fail on Irish historical context, Irish language content, and the particular assessment rubrics used by the State Examinations Commission.</p>
+<p>Diotima set out to build an AI-powered formative assessment platform tailored to the Irish secondary school curriculum, specifically targeting Leaving Certificate alignment. The challenge was significant on two fronts simultaneously.</p>
+<p>The first was pedagogical: Ireland's curriculum is highly specific, and generic AI tools consistently fail on Irish historical context, Irish language content, and the particular assessment rubrics used by the State Examinations Commission. Off-the-shelf solutions produce plausible-sounding content that does not survive contact with an Irish classroom.</p>
+<p>The second was regulatory. Under the EU AI Act, any AI system that analyses student responses and structures performance interpretation is classified as high-risk under Annex III, Section 3(a). That classification was not incidental to the product — it shaped every architectural and governance decision from the outset. From day one, Diotima was designed to meet those obligations, not to retrofit compliance onto an existing product.</p>
 </div>
 
 <div class="cs-section">
 <h3>What We Did</h3>
 <ul class="work-items">
+
 <li class="work-item">
 <div class="work-item-icon">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Curriculum Alignment Architecture</h4>
-<p>Advised on how to structure content ingestion and retrieval so the platform could accurately map questions and learning objectives to specific Leaving Cert syllabus strands — a problem that required custom approaches rather than off-the-shelf RAG.</p>
+<h4>Compliance-Grade Architecture from First Principles</h4>
+<p>The most consequential early decision was to treat the EU AI Act's Annex III classification as a design brief rather than a documentation task. This meant scoping the high-risk components narrowly — the Question, Answer and Rubric Generation Engine and the AI Inference and Feedback Engine — and separating them cleanly from supporting infrastructure. Every architectural choice was oriented by that classification, which simplified governance, reduced risk propagation, and made the compliance case tractable for the team building it.</p>
 </div>
 </li>
+
 <li class="work-item">
 <div class="work-item-icon">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Question &amp; Rubric Generation</h4>
-<p>Worked through the model selection and prompting strategy for generating exam-style questions and marking rubrics, including how to handle the nuance of Irish history and Irish language requirements that generic models handle poorly.</p>
+<h4>Curriculum Alignment and Grounded Content Generation</h4>
+<p>Advised on how to structure content ingestion and retrieval so the platform could accurately map questions and learning objectives to specific Leaving Cert syllabus strands. The approach required custom solutions rather than off-the-shelf RAG: all AI-generated questions, answers, and rubrics are explicitly linked to curriculum topics, learning outcomes, Bloom's Taxonomy cognitive levels, and approved, licensed source-of-truth materials. This grounding simultaneously prevents hallucination, ensures curriculum fidelity, and enables clear traceability — giving teachers the visibility they need to make informed approval decisions and giving regulators a clear basis for understanding why any given item exists.</p>
 </div>
 </li>
+
 <li class="work-item">
 <div class="work-item-icon">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Teacher Pilot Programme</h4>
-<p>Supported the design of an early pilot with Irish teachers, helping define what "good" looked like for AI-generated content in an Irish classroom context, and how to gather structured feedback to improve the system.</p>
+<h4>Human Oversight as a Structural Feature, Not a Policy Statement</h4>
+<p>A central challenge in the product design was operationalising Article 14 (Human Oversight) in a way that was real rather than nominal. The solution was to enforce oversight through the workflow itself: teachers must approve every generated assessment item before any student sees it; AI rubric placements are always provisional; teachers can accept, edit, override, or replace any output at any stage; and only teacher-confirmed results are stored as authoritative. Students never receive AI-generated feedback that has not been reviewed by a teacher. That is a technical constraint embedded in the system, not an aspiration in a policy document.</p>
 </div>
 </li>
+
 <li class="work-item">
 <div class="work-item-icon">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Content Licensing Strategy</h4>
-<p>As the platform matured, content licensing with Irish publishers became a key risk. I helped identify this early and advised on how to build the platform in a way that reduced dependency on third-party licensed material.</p>
+<h4>Model Selection and Responsible Evaluation</h4>
+<p>Worked through the model selection and prompting strategy for generating exam-style questions and marking rubrics — including the particular challenges of Irish history and Irish language content that generic models handle poorly. Model choice was treated as a governance decision: candidates were evaluated against structured benchmarks covering knowledge and reasoning, factuality and hallucination, instruction following, bias and fairness, and toxicity and safety. No student data is used for model training at any stage. Model versions are logged per inference to support audit and post-market monitoring.</p>
 </div>
 </li>
+
 <li class="work-item">
 <div class="work-item-icon">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Investor Narrative</h4>
-<p>Contributed to how the platform's differentiation — Irish-specific, curriculum-aligned, teacher-validated — was articulated for investor conversations.</p>
+<h4>Teacher Pilot Programme and Post-Market Monitoring</h4>
+<p>Supported the design of an early pilot with Irish teachers, helping define what "good" looked like for AI-generated content in an Irish classroom context, and how to gather structured feedback to improve the system. The teacher approval and rejection workflow was designed as a continuous monitoring mechanism — every rejection reason is a signal about model performance in real educational contexts that feeds back into the risk register and model governance process. Compliance, in this design, is something the system generates evidence for as a byproduct of normal operation.</p>
 </div>
 </li>
+
+<li class="work-item">
+<div class="work-item-icon">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+</div>
+<div class="work-item-body">
+<h4>Content Licensing Strategy and Investor Narrative</h4>
+<p>As the platform matured, content licensing with Irish publishers became a key risk. Helped identify this early and advised on how to structure publisher agreements explicitly covering storage, processing, and derivative use of licensed materials within the scope of Diotima's purpose. This became part of the investor narrative: the platform's differentiation — Irish-specific, curriculum-aligned, teacher-validated, and compliance-grade — was articulated not just as a product thesis but as a regulatory moat. In regulated education markets, compliance-by-design gives buyers access to institutions that non-compliant products simply cannot legally serve.</p>
+</div>
+</li>
+
 </ul>
 </div>
 
 <div class="cs-section">
 <div class="outcome-box">
 <h3>Outcome</h3>
-<p>The platform moved from concept to working pilot with Irish secondary school teachers. The team developed a clear product thesis distinguishing it from generic AI tutoring tools, grounded in the specific regulatory and pedagogical context of the Irish education system.</p>
-<p>The curriculum alignment approach provided a defensible technical moat — a platform built not just on AI capability, but on deep domain specificity that competitors cannot easily replicate.</p>
-</div>
+<p>The platform moved from concept to working pilot with Irish secondary school teachers. The team developed a clear product thesis distinguishing Diotima from generic AI tutoring tools — grounded in the specific regulatory, pedagogical, and curricular context of the Irish education system.</p>
+<p>The compliance-by-design approach proved to be the most durable element of that differentiation. Most educational AI products treat regulation as friction. Diotima treats it as infrastructure. By embedding Annex III requirements into the architecture from the outset, the platform achieved something that post-hoc compliance cannot: genuine trustworthiness that institutions, teachers, and regulators can verify rather than merely assert. The curriculum alignment approach and the teacher-in-the-loop workflow together constitute a defensible technical and regulatory moat — one that becomes more valuable, not less, as the EU AI Act comes fully into force.</p>
 </div>
 </div>
 
+</div>
 </div>
 </div>
 
@@ -244,6 +265,7 @@ footer a:hover{color:#fff}
 <a href="index.html#services">AI Readiness</a></div>
 <div><h4>Company</h4>
 <a href="about.html">About</a>
+<a href="case-studies.html">Case Studies</a>
 <a href="index.html#insights">Insights</a>
 <a href="contact.html">Contact</a></div>
 <div><h4>Get in Touch</h4>
