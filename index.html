@@ -68,6 +68,17 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6
 .origin-inner{max-width:800px;margin:0 auto;text-align:center}
 .origin blockquote{font-family:var(--font-heading);font-size:26px;color:var(--deep-forest);line-height:1.5;margin-bottom:20px;font-style:italic}
 .origin .attribution{font-size:14px;color:var(--text-muted)}
+.insights{padding:100px 60px;max-width:1200px;margin:0 auto}
+.insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.insight-card{background:var(--off-white);border-radius:12px;overflow:hidden;transition:all .3s;border:1px solid transparent;text-decoration:none;color:inherit;display:block}
+.insight-card:hover{border-color:var(--mint);transform:translateY(-4px);box-shadow:0 12px 32px rgba(27,67,50,.08)}
+.insight-thumb{position:relative;width:100%;padding-top:56.25%;background:var(--deep-forest);overflow:hidden}
+.insight-thumb svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.insight-badge{position:absolute;top:12px;left:12px;background:var(--warm-gold);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:4px;letter-spacing:.5px;text-transform:uppercase}
+.insight-body{padding:24px}
+.insight-body h3{font-size:17px;font-weight:700;color:var(--deep-forest);margin-bottom:10px;line-height:1.4}
+.insight-body p{font-size:14px;line-height:1.6;color:var(--text-secondary);margin-bottom:16px}
+.insight-link{font-size:13px;font-weight:600;color:var(--warm-gold);display:inline-flex;align-items:center;gap:6px}
 .cta-section{background:linear-gradient(135deg,var(--deep-forest) 0%,var(--emerald) 60%,var(--sage) 100%);padding:100px 60px;text-align:center;color:#fff}
 .cta-section h2{font-family:var(--font-heading);font-size:40px;margin-bottom:16px}
 .cta-section p{font-size:18px;opacity:.85;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
@@ -86,7 +97,7 @@ footer a:hover{color:#fff}
 .social-links{display:flex;gap:16px}
 .social-links a{display:inline-flex;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);align-items:center;justify-content:center;margin:0;transition:background .2s}
 .social-links a:hover{background:rgba(255,255,255,.15)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:300px}.services-grid,.approach-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}nav{padding:16px 24px}.hero-content{padding:60px 24px}.services,.approach{padding:60px 24px}.about-section,.origin,.cta-section{padding:60px 24px}footer{padding:40px 24px 20px}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:300px}.services-grid,.approach-grid,.insights-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}nav{padding:16px 24px}.hero-content{padding:60px 24px}.services,.approach{padding:60px 24px}.about-section,.origin,.cta-section{padding:60px 24px}footer{padding:40px 24px 20px}}
 </style>
 </head>
 <body>
@@ -98,7 +109,7 @@ footer a:hover{color:#fff}
 <div class="nav-links">
 <a href="#">Services</a>
 <a href="#">About</a>
-<a href="#">Insights</a>
+<a href="#insights">Insights</a>
 <a href="#" class="btn btn-primary" style="padding:10px 24px;font-size:14px">Book a Consultation</a>
 </div></nav>
 
@@ -148,16 +159,16 @@ footer a:hover{color:#fff}
 <div class="about-grid">
 <div>
 <div class="section-label">Why Noval</div>
-<h2 class="section-title">Led by Deep AI Expertise</h2>
-<p>Founded by Eoin Lane, a seasoned AI executive and IBM Master Inventor with a proven track record delivering transformative, enterprise-scale AI solutions across global organizations.</p>
-<p>With experience leading global teams of data scientists and engineers, and having spearheaded a &euro;8M Digital R&amp;D Hub recognized by IDA Ireland, Noval brings the rare combination of technical depth and business acumen that complex AI challenges demand.</p>
+<h2 class="section-title">15 Years at the Forefront of Enterprise AI</h2>
+<p>Founded by Eoin Lane, former Global Head of AI at BNY Mellon and IBM Master Inventor, Noval brings battle-tested experience in delivering Responsible AI applications at enterprise scale.</p>
+<p>From building and leading global AI teams to shipping production systems trusted by the world's largest financial institutions, Eoin has spent 15 years turning AI ambition into measurable business outcomes &mdash; always with responsibility at the core.</p>
 <a href="#" class="btn btn-gold" style="margin-top:20px">Meet the Team</a>
 </div>
 <div class="stats-grid">
+<div class="stat-card"><div class="stat-number">15</div><div class="stat-label">Years leading AI strategy &amp; delivery</div></div>
+<div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Years as Global Head of AI, BNY Mellon</div></div>
 <div class="stat-card"><div class="stat-number">70+</div><div class="stat-label">Patents &amp; patents pending</div></div>
 <div class="stat-card"><div class="stat-number">2x</div><div class="stat-label">Gartner Eye on Innovation shortlist</div></div>
-<div class="stat-card"><div class="stat-number">&euro;8M</div><div class="stat-label">R&amp;D Hub established in Dublin</div></div>
-<div class="stat-card"><div class="stat-number">20+</div><div class="stat-label">Years in AI &amp; data science</div></div>
 </div></div></section>
 
 <section class="approach">
@@ -178,6 +189,46 @@ footer a:hover{color:#fff}
 <blockquote>Inspired by Nohoval Cove's untouched beauty in County Cork, Noval reflects AI's vast, uncharted potential. Like the cove's raw landscape, AI offers boundless opportunities that require thoughtful navigation.</blockquote>
 <p class="attribution">The Noval Story &mdash; Where nature meets innovation</p>
 </div></section>
+
+<section class="insights" id="insights">
+<div style="text-align:center">
+<div class="section-label">Insights</div>
+<h2 class="section-title">Latest Thinking</h2>
+<p class="section-subtitle" style="margin:0 auto 50px">Expert perspectives on AI regulation, emerging technology, and responsible innovation.</p>
+</div>
+<div class="insights-grid">
+<a href="https://lnkd.in/eDNp4kXH" target="_blank" rel="noopener" class="insight-card">
+<div class="insight-thumb">
+<span class="insight-badge">Video</span>
+<svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(255,255,255,.9)"><path d="M8 5v14l11-7z"/></svg>
+</div>
+<div class="insight-body">
+<h3>The EU AI Act Is Here &mdash; And It's a Game Changer</h3>
+<p>Breaking down what the EU AI Act means for businesses and why compliance needs to start now.</p>
+<span class="insight-link">Watch on LinkedIn &rarr;</span>
+</div></a>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7311082899435339776/" target="_blank" rel="noopener" class="insight-card">
+<div class="insight-thumb">
+<span class="insight-badge">Video</span>
+<svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(255,255,255,.9)"><path d="M8 5v14l11-7z"/></svg>
+</div>
+<div class="insight-body">
+<h3>Agentic AI: The Next Leap in Intelligence</h3>
+<p>Exploring how autonomous AI agents are reshaping enterprise capabilities and what leaders need to know.</p>
+<span class="insight-link">Watch on LinkedIn &rarr;</span>
+</div></a>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7320767668100214784" target="_blank" rel="noopener" class="insight-card">
+<div class="insight-thumb">
+<span class="insight-badge">Video</span>
+<svg width="48" height="48" viewBox="0 0 24 24" fill="rgba(255,255,255,.9)"><path d="M8 5v14l11-7z"/></svg>
+</div>
+<div class="insight-body">
+<h3>Welcome to Noval Consulting</h3>
+<p>Meet the team and learn how Noval helps businesses navigate AI with confidence and responsibility.</p>
+<span class="insight-link">Watch on LinkedIn &rarr;</span>
+</div></a>
+</div>
+</section>
 
 <section class="cta-section">
 <h2>Ready to Navigate AI with Confidence?</h2>
