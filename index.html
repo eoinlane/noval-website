@@ -79,6 +79,15 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6
 .insight-body h3{font-size:17px;font-weight:700;color:var(--deep-forest);margin-bottom:10px;line-height:1.4}
 .insight-body p{font-size:14px;line-height:1.6;color:var(--text-secondary);margin-bottom:16px}
 .insight-link{font-size:13px;font-weight:600;color:var(--warm-gold);display:inline-flex;align-items:center;gap:6px}
+.case-studies-section{padding:100px 60px;background:var(--off-white);border-top:1px solid var(--light-grey)}
+.case-studies-inner{max-width:1200px;margin:0 auto}
+.cs-card{display:block;background:#fff;border-radius:12px;padding:40px;border:1px solid var(--light-grey);text-decoration:none;color:inherit;transition:all .3s;max-width:800px;margin:0 auto}
+.cs-card:hover{border-color:var(--sage);box-shadow:0 12px 32px rgba(27,67,50,.08);transform:translateY(-3px)}
+.cs-card-tag{display:inline-block;background:var(--mint);color:var(--deep-forest);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;margin-bottom:16px}
+.cs-card h3{font-family:var(--font-heading);font-size:24px;color:var(--deep-forest);margin-bottom:14px;line-height:1.3}
+.cs-card p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:24px}
+.cs-card-meta{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--text-muted)}
+.cs-card-link{font-weight:600;color:var(--warm-gold)}
 .cta-section{background:linear-gradient(135deg,var(--deep-forest) 0%,var(--emerald) 60%,var(--sage) 100%);padding:100px 60px;text-align:center;color:#fff}
 .cta-section h2{font-family:var(--font-heading);font-size:40px;margin-bottom:16px}
 .cta-section p{font-size:18px;opacity:.85;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
@@ -97,7 +106,7 @@ footer a:hover{color:#fff}
 .social-links{display:flex;gap:16px}
 .social-links a{display:inline-flex;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);align-items:center;justify-content:center;margin:0;transition:background .2s}
 .social-links a:hover{background:rgba(255,255,255,.15)}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:300px}.services-grid,.approach-grid,.insights-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}nav{padding:16px 24px}.hero-content{padding:60px 24px}.services,.approach{padding:60px 24px}.about-section,.origin,.cta-section{padding:60px 24px}footer{padding:40px 24px 20px}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:300px}.services-grid,.approach-grid,.insights-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}nav{padding:16px 24px}.hero-content{padding:60px 24px}.services,.approach{padding:60px 24px}.about-section,.origin,.cta-section{padding:60px 24px}.case-studies-section{padding:60px 24px}footer{padding:40px 24px 20px}}
 </style>
 </head>
 <body>
@@ -230,6 +239,25 @@ footer a:hover{color:#fff}
 </div>
 </section>
 
+<section class="case-studies-section" id="case-studies">
+<div class="case-studies-inner">
+<div style="text-align:center;margin-bottom:50px">
+<div class="section-label">Client Work</div>
+<h2 class="section-title">Case Studies</h2>
+<p style="font-size:17px;color:var(--text-secondary);line-height:1.6;max-width:560px;margin:0 auto">Real engagements. Tangible outcomes. AI strategy that translates into results.</p>
+</div>
+<a href="case-studies.html#diotima" class="cs-card">
+<div class="cs-card-tag">EdTech</div>
+<h3>AI-Powered EdTech Platform for Irish Secondary Education</h3>
+<p>Helped Diotima build a curriculum-aligned AI tutoring platform purpose-built for the Leaving Certificate — where generic AI tools consistently fall short on Irish context, language, and assessment rubrics.</p>
+<div class="cs-card-meta">
+<span>Diotima &mdash; 2025&ndash;2026</span>
+<span class="cs-card-link">Read case study &rarr;</span>
+</div>
+</a>
+</div>
+</section>
+
 <section class="cta-section">
 <h2>Ready to Navigate AI with Confidence?</h2>
 <p>Whether you're preparing for EU AI Act compliance or building your AI strategy from scratch, we're here to guide you.</p>
@@ -253,7 +281,8 @@ footer a:hover{color:#fff}
 <a href="#">AI Readiness</a></div>
 <div><h4>Company</h4>
 <a href="about.html">About</a>
-<a href="#">Insights</a>
+<a href="case-studies.html">Case Studies</a>
+<a href="#insights">Insights</a>
 <a href="contact.html">Contact</a></div>
 <div><h4>Get in Touch</h4>
 <a href="mailto:info@novalconsultancy.com">info@novalconsultancy.com</a>

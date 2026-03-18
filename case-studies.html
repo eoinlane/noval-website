@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies | Noval Consultancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--deep-forest:#1B4332;--emerald:#2D6A4F;--sage:#52B788;--mint:#D8F3DC;--warm-gold:#B68D40;--gold-light:#D4A853;--off-white:#F8F9FA;--light-grey:#E9ECEF;--text-primary:#1B1B1B;--text-secondary:#555;--text-muted:#888;--font-heading:'DM Serif Display',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--font-mono:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text-primary);background:#fff}
+
+/* Nav */
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:#fff;border-bottom:1px solid var(--light-grey);position:sticky;top:0;z-index:999}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep-forest)}
+.nav-logo img{width:40px;height:40px;object-fit:contain}
+.nav-logo span{font-family:var(--font-heading);font-size:24px}
+.logo-invert{filter:brightness(0) invert(1)}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{text-decoration:none;color:var(--text-secondary);font-size:15px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--deep-forest)}
+
+/* Buttons */
+.btn{display:inline-block;padding:12px 28px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.btn-primary{background:var(--deep-forest);color:#fff}
+.btn-primary:hover{background:var(--emerald)}
+.btn-gold{background:var(--warm-gold);color:#fff}
+.btn-gold:hover{background:var(--gold-light)}
+.btn-white{background:#fff;color:var(--deep-forest);font-weight:700}
+.btn-white:hover{background:var(--mint)}
+
+/* Shared */
+.section-label{font-family:var(--font-mono);font-size:12px;color:var(--warm-gold);text-transform:uppercase;letter-spacing:2.5px;font-weight:500;margin-bottom:12px}
+.section-title{font-family:var(--font-heading);font-size:38px;color:var(--deep-forest);margin-bottom:16px}
+
+/* Page hero */
+.page-hero{background:var(--deep-forest);padding:80px 60px;color:#fff;text-align:center}
+.page-hero .section-label{color:var(--gold-light)}
+.page-hero h1{font-family:var(--font-heading);font-size:52px;color:#fff;margin-bottom:20px}
+.page-hero p{font-size:18px;line-height:1.65;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto}
+
+/* Case study layout */
+.case-study{padding:80px 60px;max-width:1200px;margin:0 auto}
+.case-study-grid{display:grid;grid-template-columns:280px 1fr;gap:80px;align-items:start}
+
+/* Sidebar */
+.cs-sidebar{position:sticky;top:100px}
+.cs-meta-card{background:var(--off-white);border-radius:12px;padding:32px;border:1px solid var(--light-grey)}
+.cs-meta-item{margin-bottom:24px}
+.cs-meta-item:last-child{margin-bottom:0}
+.cs-meta-label{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);margin-bottom:6px}
+.cs-meta-value{font-size:15px;font-weight:600;color:var(--text-primary);line-height:1.4}
+.cs-tag{display:inline-block;background:var(--mint);color:var(--deep-forest);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px}
+
+/* Main content */
+.cs-content h2{font-family:var(--font-heading);font-size:32px;color:var(--deep-forest);margin-bottom:12px;line-height:1.2}
+.cs-content .cs-intro{font-size:18px;color:var(--text-secondary);line-height:1.7;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--light-grey)}
+.cs-section{margin-bottom:48px}
+.cs-section h3{font-size:13px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:2px;color:var(--warm-gold);margin-bottom:20px}
+.cs-section p{font-size:16px;line-height:1.75;color:var(--text-secondary);margin-bottom:16px}
+.cs-section p:last-child{margin-bottom:0}
+
+/* Work items */
+.work-items{list-style:none;display:flex;flex-direction:column;gap:20px}
+.work-item{display:flex;gap:20px;align-items:flex-start;background:var(--off-white);border-radius:10px;padding:24px;border:1px solid var(--light-grey)}
+.work-item-icon{width:36px;height:36px;border-radius:8px;background:var(--deep-forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.work-item-body h4{font-size:15px;font-weight:700;color:var(--deep-forest);margin-bottom:6px}
+.work-item-body p{font-size:14px;line-height:1.65;color:var(--text-secondary);margin:0}
+
+/* Outcome box */
+.outcome-box{background:var(--deep-forest);border-radius:12px;padding:36px;color:#fff}
+.outcome-box h3{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--gold-light);margin-bottom:16px}
+.outcome-box p{font-size:16px;line-height:1.75;color:rgba(255,255,255,.85);margin-bottom:14px}
+.outcome-box p:last-child{margin-bottom:0}
+
+/* CTA */
+.cta-section{background:linear-gradient(135deg,var(--deep-forest) 0%,var(--emerald) 60%,var(--sage) 100%);padding:100px 60px;text-align:center;color:#fff}
+.cta-section h2{font-family:var(--font-heading);font-size:40px;margin-bottom:16px}
+.cta-section p{font-size:18px;opacity:.85;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
+.cta-buttons{display:flex;gap:16px;justify-content:center}
+
+/* Footer */
+footer{background:#0D2818;color:rgba(255,255,255,.7);padding:60px 60px 30px}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:50px;margin-bottom:50px}
+.footer-brand p{font-size:14px;line-height:1.6;margin-top:16px;color:rgba(255,255,255,.5)}
+footer h4{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold-light);margin-bottom:18px;font-weight:600}
+footer a{display:block;color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;margin-bottom:10px;transition:color .2s}
+footer a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;font-size:13px;color:rgba(255,255,255,.35)}
+
+/* Responsive */
+@media(max-width:900px){
+  nav{padding:16px 24px}
+  .page-hero{padding:60px 24px}
+  .page-hero h1{font-size:38px}
+  .case-study{padding:60px 24px}
+  .case-study-grid{grid-template-columns:1fr;gap:40px}
+  .cs-sidebar{position:static}
+  .cta-section{padding:60px 24px}
+  footer{padding:40px 24px 20px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="index.html" class="nav-logo">
+<img src="noval-icon.png" alt="Noval Icon" width="40" height="40">
+<span>Noval</span></a>
+<div class="nav-links">
+<a href="index.html#services">Services</a>
+<a href="about.html">About</a>
+<a href="index.html#insights">Insights</a>
+<a href="contact.html" class="btn btn-primary" style="padding:10px 24px;font-size:14px">Book a Consultation</a>
+</div></nav>
+
+<section class="page-hero">
+<div class="section-label">Client Work</div>
+<h1>Case Studies</h1>
+<p>Real engagements. Tangible outcomes. AI strategy that translates into results.</p>
+</section>
+
+<div class="case-study" id="diotima">
+<div class="case-study-grid">
+
+<aside class="cs-sidebar">
+<div class="cs-meta-card">
+<div class="cs-meta-item">
+<div class="cs-meta-label">Client</div>
+<div class="cs-meta-value">Diotima (EdTech Division)</div>
+</div>
+<div class="cs-meta-item">
+<div class="cs-meta-label">Sector</div>
+<div><span class="cs-tag">EdTech</span></div>
+</div>
+<div class="cs-meta-item">
+<div class="cs-meta-label">Engagement</div>
+<div class="cs-meta-value">2025 – 2026</div>
+</div>
+<div class="cs-meta-item">
+<div class="cs-meta-label">Role</div>
+<div class="cs-meta-value">AI Strategy Consultant &amp; Implementation Advisor</div>
+</div>
+</div>
+</aside>
+
+<div class="cs-content">
+<div class="section-label">Case Study 01</div>
+<h2>AI-Powered EdTech Platform for Irish Secondary Education</h2>
+<p class="cs-intro">Helping Diotima build a curriculum-aligned AI tutoring platform purpose-built for the Leaving Certificate — where generic AI tools consistently fall short on Irish context, language, and assessment rubrics.</p>
+
+<div class="cs-section">
+<h3>Background</h3>
+<p>Diotima set out to build an AI-powered educational platform tailored to the Irish secondary school curriculum, specifically targeting Leaving Certificate alignment. The challenge was significant: Ireland's curriculum is highly specific, and generic AI tools consistently fail on Irish historical context, Irish language content, and the particular assessment rubrics used by the State Examinations Commission.</p>
+</div>
+
+<div class="cs-section">
+<h3>What We Did</h3>
+<ul class="work-items">
+<li class="work-item">
+<div class="work-item-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+</div>
+<div class="work-item-body">
+<h4>Curriculum Alignment Architecture</h4>
+<p>Advised on how to structure content ingestion and retrieval so the platform could accurately map questions and learning objectives to specific Leaving Cert syllabus strands — a problem that required custom approaches rather than off-the-shelf RAG.</p>
+</div>
+</li>
+<li class="work-item">
+<div class="work-item-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+</div>
+<div class="work-item-body">
+<h4>Question &amp; Rubric Generation</h4>
+<p>Worked through the model selection and prompting strategy for generating exam-style questions and marking rubrics, including how to handle the nuance of Irish history and Irish language requirements that generic models handle poorly.</p>
+</div>
+</li>
+<li class="work-item">
+<div class="work-item-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+</div>
+<div class="work-item-body">
+<h4>Teacher Pilot Programme</h4>
+<p>Supported the design of an early pilot with Irish teachers, helping define what "good" looked like for AI-generated content in an Irish classroom context, and how to gather structured feedback to improve the system.</p>
+</div>
+</li>
+<li class="work-item">
+<div class="work-item-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</div>
+<div class="work-item-body">
+<h4>Content Licensing Strategy</h4>
+<p>As the platform matured, content licensing with Irish publishers became a key risk. I helped identify this early and advised on how to build the platform in a way that reduced dependency on third-party licensed material.</p>
+</div>
+</li>
+<li class="work-item">
+<div class="work-item-icon">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>
+</div>
+<div class="work-item-body">
+<h4>Investor Narrative</h4>
+<p>Contributed to how the platform's differentiation — Irish-specific, curriculum-aligned, teacher-validated — was articulated for investor conversations.</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div class="cs-section">
+<div class="outcome-box">
+<h3>Outcome</h3>
+<p>The platform moved from concept to working pilot with Irish secondary school teachers. The team developed a clear product thesis distinguishing it from generic AI tutoring tools, grounded in the specific regulatory and pedagogical context of the Irish education system.</p>
+<p>The curriculum alignment approach provided a defensible technical moat — a platform built not just on AI capability, but on deep domain specificity that competitors cannot easily replicate.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<section class="cta-section">
+<h2>Ready to Navigate AI with Confidence?</h2>
+<p>Whether you're preparing for EU AI Act compliance or building your AI strategy from scratch, we're here to guide you.</p>
+<div class="cta-buttons">
+<a href="contact.html" class="btn btn-white">Book a Free Consultation</a>
+<a href="index.html#services" class="btn btn-gold">View Our Services</a>
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+<img src="noval-icon.png" alt="Noval" width="32" height="32" class="logo-invert">
+<span style="font-family:var(--font-heading);font-size:20px;color:#fff">Noval</span>
+</div>
+<p>Empowering businesses to harness AI responsibly while navigating the complexities of compliance and governance.</p>
+</div>
+<div><h4>Services</h4>
+<a href="index.html#services">EU AI Act Compliance</a>
+<a href="index.html#services">AI Strategy &amp; Governance</a>
+<a href="index.html#services">AI Readiness</a></div>
+<div><h4>Company</h4>
+<a href="about.html">About</a>
+<a href="index.html#insights">Insights</a>
+<a href="contact.html">Contact</a></div>
+<div><h4>Get in Touch</h4>
+<a href="mailto:info@novalconsultancy.com">info@novalconsultancy.com</a>
+<a href="tel:+353830270372">+353 83 027 0372</a>
+</div></div>
+<div class="footer-bottom">
+<span>&copy; 2026 Noval Consultancy. All rights reserved.</span>
+<span>Dublin, Ireland</span>
+</div></footer>
+
+</body>
+</html>
