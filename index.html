@@ -108,7 +108,7 @@ footer a:hover{color:#fff}
 .social-links{display:flex;gap:16px}
 .social-links a{display:inline-flex;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);align-items:center;justify-content:center;margin:0;transition:background .2s}
 .social-links a:hover{background:rgba(255,255,255,.15)}
-@media(max-width:600px){nav{padding:12px 20px}.nav-logo span{font-size:20px}.nav-links{gap:0}.nav-links a:not(.btn){display:none}.trust-bar{padding:20px 24px;gap:16px;flex-wrap:wrap;justify-content:flex-start}.trust-item{font-size:13px;width:calc(50% - 8px)}.trust-item .number{font-size:22px}}
+@media(max-width:600px){nav{padding:12px 20px}.nav-logo span{font-size:20px}.nav-links{gap:0}.nav-links a:not(.btn){display:none}.trust-bar{padding:20px 24px;gap:12px;flex-direction:column;align-items:flex-start}.trust-hide-mobile{display:none}.trust-item .number{font-size:22px}}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:300px}.services-grid,.approach-grid,.insights-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}nav{padding:16px 24px}.nav-links{gap:20px}.hero-content{padding:60px 24px}.services,.approach{padding:60px 24px}.about-section,.origin,.cta-section{padding:60px 24px}.case-studies-section{padding:60px 24px}footer{padding:40px 24px 20px}}
 </style>
 </head>
@@ -142,8 +142,8 @@ footer a:hover{color:#fff}
 <div class="trust-item"><span class="number">70+</span> Patents &amp; Patents Pending</div>
 <div class="trust-item"><span class="number">$100M+</span> Revenue Generated via AI</div>
 <div class="trust-item">Gartner Eye on Innovation Winner 2020</div>
-<div class="trust-item">IBM Master Inventor</div>
-<div class="trust-item">Enterprise AI Leadership</div>
+<div class="trust-item trust-hide-mobile">IBM Master Inventor</div>
+<div class="trust-item trust-hide-mobile">Enterprise AI Leadership</div>
 </div>
 
 <section class="services" id="services">
