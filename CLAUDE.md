@@ -52,9 +52,14 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 ## Marketing & content
 Q2 2026 bi-weekly content plan is active. Key upcoming work:
 - Insights section on website needs to become a real blog (articles, not just cards)
-- Lead capture (newsletter or EU AI Act briefing form) needed on homepage before content goes live
+- Lead capture: Mailchimp newsletter signup form to be embedded on homepage (in progress)
 - Diotima white paper (https://github.com/eoinlane/diotima-whitepaper) to be published and linked from site
 - Case study page needs improvement before Diotima white paper is promoted
+
+## Business tools
+- CRM: Pipedrive (novalconsultancy.pipedrive.com) — configured with 6-stage pipeline
+- Email marketing: Mailchimp (eoin@novalconsultancy.com) — setup in progress
+- Contact form: Formspree (ID: xlgpavqa) on contact.html
 
 ## Working approach
 - Confirm before making changes across multiple files
