@@ -49,6 +49,13 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 - Contact: info@novalconsultancy.com | +353 83 027 0372
 - LinkedIn: https://www.linkedin.com/in/laneeoin/
 
+## Marketing & content
+Q2 2026 bi-weekly content plan is active. Key upcoming work:
+- Insights section on website needs to become a real blog (articles, not just cards)
+- Lead capture (newsletter or EU AI Act briefing form) needed on homepage before content goes live
+- Diotima white paper (https://github.com/eoinlane/diotima-whitepaper) to be published and linked from site
+- Case study page needs improvement before Diotima white paper is promoted
+
 ## Working approach
 - Confirm before making changes across multiple files
 - Commit after each logical chunk of work
