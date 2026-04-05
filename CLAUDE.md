@@ -2,7 +2,8 @@
 
 ## Project
 Static HTML/CSS website for Noval Consultancy. No framework, no build step, no bundler.
-Live at: https://eoinlane.github.io/noval-website
+Live at: https://noval.ie (custom domain, registered via Blacknight, DNS points to GitHub Pages)
+GitHub Pages fallback: https://eoinlane.github.io/noval-website
 Repo: https://github.com/eoinlane/noval-website
 
 ## Stack rules
