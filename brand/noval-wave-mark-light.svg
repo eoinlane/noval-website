@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Noval Wave Mark (light version) — for dark backgrounds -->
+  <circle cx="60" cy="60" r="56" fill="#FFFFFF" opacity="0.1"/>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Three layered waves -->
+  <path d="M16 68 Q30 54, 44 62 Q58 70, 72 58 Q86 46, 104 56"
+        fill="none" stroke="#52B788" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+  <path d="M16 76 Q32 62, 48 70 Q64 78, 80 66 Q96 54, 104 64"
+        fill="none" stroke="#D8F3DC" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+
+  <path d="M16 84 Q34 70, 52 78 Q70 86, 88 74 Q100 66, 104 72"
+        fill="none" stroke="#D4A853" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Cliff silhouette -->
+  <path d="M20 55 L28 38 L40 42 L52 30 L60 34 L68 28 L78 36 L88 32 L96 40 L104 38 L104 55"
+        fill="#FFFFFF" opacity="0.15"/>
+</svg>

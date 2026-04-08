@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 200" width="780" height="200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;family=JetBrains+Mono:wght@400&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Deep Forest -->
+  <rect x="0" y="0" width="120" height="120" rx="12" fill="#1B4332"/>
+  <text x="60" y="148" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#1B1B1B">Deep Forest</text>
+  <text x="60" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#888">#1B4332</text>
+
+  <!-- Emerald -->
+  <rect x="132" y="0" width="120" height="120" rx="12" fill="#2D6A4F"/>
+  <text x="192" y="148" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#1B1B1B">Emerald</text>
+  <text x="192" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#888">#2D6A4F</text>
+
+  <!-- Sage -->
+  <rect x="264" y="0" width="120" height="120" rx="12" fill="#52B788"/>
+  <text x="324" y="148" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#1B1B1B">Sage</text>
+  <text x="324" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#888">#52B788</text>
+
+  <!-- Mint -->
+  <rect x="396" y="0" width="120" height="120" rx="12" fill="#D8F3DC"/>
+  <rect x="396" y="0" width="120" height="120" rx="12" fill="none" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="456" y="148" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#1B1B1B">Mint</text>
+  <text x="456" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#888">#D8F3DC</text>
+
+  <!-- Warm Gold -->
+  <rect x="528" y="0" width="120" height="120" rx="12" fill="#B68D40"/>
+  <text x="588" y="148" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#1B1B1B">Warm Gold</text>
+  <text x="588" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#888">#B68D40</text>
+
+  <!-- Gold Light -->
+  <rect x="660" y="0" width="120" height="120" rx="12" fill="#D4A853"/>
+  <text x="720" y="148" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#1B1B1B">Gold Light</text>
+  <text x="720" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#888">#D4A853</text>
+
+  <!-- Label -->
+  <text x="0" y="196" font-family="'JetBrains Mono', monospace" font-size="10" fill="#888" letter-spacing="2" text-transform="uppercase">NOVAL CONSULTANCY — BRAND COLOURS</text>
+</svg>

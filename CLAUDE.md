@@ -17,6 +17,19 @@ Repo: https://github.com/eoinlane/noval-website
 - `contact.html` — Formspree contact form (ID: xlgpavqa)
 - `case-studies.html` — Diotima EdTech case study
 
+## Brand assets
+Brand guidelines and assets live in `brand/`:
+- `noval-icon.svg` — vector version of the logo (traced from PNG via vectorizer.ai)
+- `noval-wordmark.svg` / `noval-wordmark-white.svg` — "Noval" wordmark in DM Serif Display
+- `colour-palette.svg` — visual swatch reference
+- `brand-spec.html` — full brand guidelines (open in browser to view)
+- `icon-preview.html` — side-by-side comparison of SVG vs PNG icon
+
+The original logo PNG is `noval-icon.png` (1024x1024). The favicon (`favicon.png`) is a 32x32 resize of this.
+
+## CSS specificity note
+`.nav-links a` has higher specificity than `.btn-primary` alone (class+element vs class). All pages include `.nav-links a.btn-primary` override to ensure the nav CTA button renders correctly (solid green, white text).
+
 ## Design system
 All pages share the same nav, footer, and CTA section pattern. Keep these consistent.
 
@@ -36,6 +49,10 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 - `btn-gold` — all secondary actions
 
 **CTA wording:** Always "Book a Consultation" (not "Book a Free Consultation")
+
+**Meta tags:** All pages have `<meta name="description">` and Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`) for social sharing.
+
+**Footer:** All pages use the same footer structure with Company links: About, Case Studies, Insights, Contact.
 
 ## About Eoin Lane
 - Founder, Noval Consultancy (2025–present)
