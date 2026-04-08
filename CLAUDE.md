@@ -57,9 +57,11 @@ Q2 2026 bi-weekly content plan is active. Key upcoming work:
 - Case study page needs improvement before Diotima white paper is promoted
 
 ## Business tools
-- CRM: Pipedrive (novalconsultancy.pipedrive.com) — configured with 6-stage pipeline
-- Email marketing: Mailchimp (eoin@novalconsultancy.com) — setup in progress
+- CRM: Pipedrive (novalconsultancy.pipedrive.com) — configured with 6-stage pipeline ✅
+- Email marketing: Mailchimp (eoin@novalconsultancy.com) — account created, setup in progress (audience name, address, signup form still to do)
 - Contact form: Formspree (ID: xlgpavqa) on contact.html
+- Calendar: Q2 content schedule added to Google Calendar (syncs to Apple Calendar) ✅
+- Task management: Apple Reminders
 
 ## Working approach
 - Confirm before making changes across multiple files
