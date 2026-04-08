@@ -1,7 +1,7 @@
 # Noval Website — Claude Code Instructions
 
 ## Project
-Static HTML/CSS website for Noval Consultancy. No framework, no build step, no bundler.
+Static HTML/CSS website for Noval Consulting. No framework, no build step, no bundler.
 Live at: https://noval.ie (custom domain, registered via Blacknight, DNS points to GitHub Pages)
 GitHub Pages fallback: https://eoinlane.github.io/noval-website
 Repo: https://github.com/eoinlane/noval-website
@@ -55,7 +55,7 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 **Footer:** All pages use the same footer structure with Company links: About, Case Studies, Insights, Contact.
 
 ## About Eoin Lane
-- Founder, Noval Consultancy (2025–present)
+- Founder, Noval Consulting (2025–present)
 - Former Global Head of Data Science and AI, BNY Mellon (2020–2025)
 - IBM Master Inventor; 12 years at IBM (2003–2015)
 - Ph.D. in Chemistry, University College Cork
