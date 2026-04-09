@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Noval LinkedIn Banner</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#e0e0e0;display:flex;flex-direction:column;align-items:center;padding:60px 20px;font-family:-apple-system,sans-serif}
+h2{font-size:14px;color:#888;margin-bottom:12px;font-weight:500}
+p.note{font-size:13px;color:#888;margin-top:16px;max-width:600px;text-align:center;line-height:1.5}
+
+.banner{
+  width:1584px;
+  height:396px;
+  background:linear-gradient(135deg, #1B4332 0%, #2D6A4F 50%, #1B4332 100%);
+  position:relative;
+  overflow:hidden;
+  flex-shrink:0;
+}
+
+/* Decorative wave shapes */
+.wave{position:absolute;bottom:0;left:0;right:0}
+.wave svg{display:block;width:100%}
+
+/* Gold accent line */
+.gold-line{
+  position:absolute;
+  top:80px;
+  left:0;
+  right:0;
+  height:1px;
+  background:linear-gradient(90deg, transparent 5%, #B68D40 30%, #D4A853 50%, #B68D40 70%, transparent 95%);
+  opacity:0.3;
+}
+
+/* Content */
+.banner-content{
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  display:flex;
+  align-items:center;
+  padding:0 120px;
+  gap:60px;
+}
+
+.banner-left{flex:1}
+.banner-right{display:flex;align-items:center;justify-content:flex-end}
+
+.banner-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  color:#D4A853;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+.banner-title{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:52px;
+  color:#fff;
+  line-height:1.15;
+  margin-bottom:16px;
+}
+
+.banner-subtitle{
+  font-family:'Inter',sans-serif;
+  font-size:18px;
+  color:rgba(255,255,255,0.7);
+  line-height:1.5;
+  max-width:500px;
+}
+
+.banner-logo{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  opacity:0.5;
+}
+.banner-logo img{
+  width:160px;
+  height:160px;
+  filter:brightness(0) invert(1);
+}
+
+/* Subtle wave decoration at bottom */
+.wave-decoration{
+  position:absolute;
+  bottom:-10px;
+  left:0;
+  right:0;
+  height:100px;
+}
+
+/* Scaled preview */
+.preview-wrap{
+  margin-top:40px;
+  width:792px;
+}
+.preview-wrap .banner{
+  width:792px;
+  height:198px;
+  transform-origin:top left;
+}
+.preview-wrap .banner-content{padding:0 60px;gap:30px}
+.preview-wrap .banner-label{font-size:7px;letter-spacing:2px;margin-bottom:8px}
+.preview-wrap .banner-title{font-size:26px;margin-bottom:8px}
+.preview-wrap .banner-subtitle{font-size:9px;max-width:260px}
+.preview-wrap .banner-logo img{width:80px;height:80px}
+.preview-wrap .gold-line{top:40px}
+</style>
+</head>
+<body>
+
+<h2>LinkedIn Company Banner — 1584 x 396px (full size)</h2>
+
+<div class="banner" id="banner">
+  <div class="gold-line"></div>
+
+  <!-- Bottom wave decoration -->
+  <svg style="position:absolute;bottom:0;left:0;width:100%;height:120px" preserveAspectRatio="none" viewBox="0 0 1584 120">
+    <path d="M0 80 C200 40, 400 100, 600 60 S1000 40, 1200 70 S1400 50, 1584 80 L1584 120 L0 120Z" fill="rgba(82,183,136,0.08)"/>
+    <path d="M0 95 C250 65, 500 110, 750 80 S1100 60, 1350 90 S1500 70, 1584 95 L1584 120 L0 120Z" fill="rgba(216,243,220,0.06)"/>
+  </svg>
+
+  <div class="banner-content">
+    <div class="banner-left">
+      <div class="banner-label">Responsible AI Consulting</div>
+      <div class="banner-title">Navigate AI<br>with Confidence</div>
+      <div class="banner-subtitle">EU AI Act compliance, strategy, and governance for European businesses.</div>
+    </div>
+    <div class="banner-right">
+      <div class="banner-logo">
+        <img src="../../noval-icon.png" alt="Noval">
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="note">To save: take a screenshot of the banner above at full size, or right-click → Inspect → capture a screenshot of the .banner element. The banner is exactly 1584x396px as required by LinkedIn.</p>
+
+<h2 style="margin-top:60px">Preview at 50% (how it looks on LinkedIn)</h2>
+<div class="preview-wrap">
+  <div class="banner">
+    <div class="gold-line"></div>
+    <svg style="position:absolute;bottom:0;left:0;width:100%;height:60px" preserveAspectRatio="none" viewBox="0 0 1584 120">
+      <path d="M0 80 C200 40, 400 100, 600 60 S1000 40, 1200 70 S1400 50, 1584 80 L1584 120 L0 120Z" fill="rgba(82,183,136,0.08)"/>
+      <path d="M0 95 C250 65, 500 110, 750 80 S1100 60, 1350 90 S1500 70, 1584 95 L1584 120 L0 120Z" fill="rgba(216,243,220,0.06)"/>
+    </svg>
+    <div class="banner-content">
+      <div class="banner-left">
+        <div class="banner-label">Responsible AI Consulting</div>
+        <div class="banner-title">Navigate AI<br>with Confidence</div>
+        <div class="banner-subtitle">EU AI Act compliance, strategy, and governance for European businesses.</div>
+      </div>
+      <div class="banner-right">
+        <div class="banner-logo">
+          <img src="../../noval-icon.png" alt="Noval">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

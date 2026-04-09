@@ -19,11 +19,15 @@ Repo: https://github.com/eoinlane/noval-website
 
 ## Brand assets
 Brand guidelines and assets live in `brand/`:
-- `noval-icon.svg` — vector version of the logo (traced from PNG via vectorizer.ai)
-- `noval-wordmark.svg` / `noval-wordmark-white.svg` — "Noval" wordmark in DM Serif Display
-- `colour-palette.svg` — visual swatch reference
 - `brand-spec.html` — full brand guidelines (open in browser to view)
-- `icon-preview.html` — side-by-side comparison of SVG vs PNG icon
+- `icon-preview.html` — side-by-side SVG vs PNG logo comparison
+- `logo/` — vector logo assets:
+  - `noval-icon.svg` — vector logo (traced in Inkscape)
+  - `noval-wordmark.svg` / `noval-wordmark-white.svg` — wordmarks
+  - `colour-palette.svg` — visual swatch reference
+- `linkedin/` — LinkedIn banner assets:
+  - `linkedin-banner.html` / `linkedin-banner-company.png` — company page banner (1584x396)
+  - `linkedin-banner-personal.html` / `linkedin-banner-personal.png` — personal profile banner (1584x396)
 
 The original logo PNG is `noval-icon.png` (1024x1024). The favicon (`favicon.png`) is a 32x32 resize of this.
 
@@ -55,8 +59,11 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 **Footer:** All pages use the same footer structure with Company links: About, Case Studies, Insights, Contact.
 
 ## About Eoin Lane
-- Founder, Noval Consulting (2025–present)
-- Former Global Head of Data Science and AI, BNY Mellon (2020–2025)
+- Founder & CEO, Noval Consulting (Oct 2024–present)
+- Adjunct Professor, Trinity Business School (Sep 2025–present) — AI strategy, responsible AI, digital transformation
+- Research Fellow, ADAPT Centre (Jun 2025–present) — co-leading DCC/ADAPT Generative AI Lab
+- Former Global Head of Data Science & AI, BNY Mellon (Feb 2020–Nov 2024)
+- Former Director, Emerging Analytics, Dun and Bradstreet (Jan 2016–Feb 2020)
 - IBM Master Inventor; 12 years at IBM (2003–2015)
 - Ph.D. in Chemistry, University College Cork
 - 70+ patents; 20+ publications

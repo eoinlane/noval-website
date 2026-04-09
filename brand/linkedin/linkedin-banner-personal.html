@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eoin Lane — LinkedIn Banner</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#e0e0e0;display:flex;flex-direction:column;align-items:center;padding:60px 20px;font-family:-apple-system,sans-serif}
+h2{font-size:14px;color:#888;margin-bottom:12px;font-weight:500}
+p.note{font-size:13px;color:#888;margin-top:16px;max-width:600px;text-align:center;line-height:1.5}
+
+.banner{
+  width:1584px;
+  height:396px;
+  background:linear-gradient(135deg, #1B4332 0%, #2D6A4F 50%, #1B4332 100%);
+  position:relative;
+  overflow:hidden;
+  flex-shrink:0;
+}
+
+.gold-line{
+  position:absolute;
+  top:80px;
+  left:0;right:0;
+  height:1px;
+  background:linear-gradient(90deg, transparent 5%, #B68D40 30%, #D4A853 50%, #B68D40 70%, transparent 95%);
+  opacity:0.3;
+}
+
+.banner-content{
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  display:flex;
+  align-items:center;
+  padding:0 120px;
+  gap:60px;
+}
+
+.banner-left{flex:1}
+.banner-right{display:flex;align-items:center;justify-content:flex-end}
+
+.banner-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  color:#D4A853;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+.banner-title{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:48px;
+  color:#fff;
+  line-height:1.15;
+  margin-bottom:16px;
+}
+
+.banner-credentials{
+  font-family:'Inter',sans-serif;
+  font-size:16px;
+  color:rgba(255,255,255,0.6);
+  line-height:1.8;
+}
+
+.banner-credentials span{
+  display:inline-block;
+  margin-right:24px;
+}
+
+.banner-credentials .divider{
+  color:rgba(255,255,255,0.2);
+  margin:0 4px;
+}
+
+.banner-logo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  opacity:0.5;
+}
+.banner-logo img{
+  width:140px;
+  height:140px;
+  filter:brightness(0) invert(1);
+}
+.banner-logo-text{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-size:28px;
+  color:#fff;
+}
+
+/* Subtle wave decoration at bottom */
+svg.waves{position:absolute;bottom:0;left:0;width:100%;height:120px}
+
+/* Scaled preview */
+.preview-wrap{margin-top:40px;width:792px}
+.preview-wrap .banner{width:792px;height:198px}
+.preview-wrap .banner-content{padding:0 60px;gap:30px}
+.preview-wrap .banner-label{font-size:7px;letter-spacing:2px;margin-bottom:8px}
+.preview-wrap .banner-title{font-size:24px;margin-bottom:8px}
+.preview-wrap .banner-credentials{font-size:8px;line-height:1.6}
+.preview-wrap .banner-credentials span{margin-right:12px}
+.preview-wrap .banner-logo img{width:70px;height:70px}
+.preview-wrap .banner-logo-text{font-size:14px}
+.preview-wrap .gold-line{top:40px}
+.preview-wrap svg.waves{height:60px}
+</style>
+</head>
+<body>
+
+<h2>Personal LinkedIn Banner — 1584 x 396px (full size)</h2>
+
+<div class="banner" id="banner">
+  <div class="gold-line"></div>
+
+  <svg class="waves" preserveAspectRatio="none" viewBox="0 0 1584 120">
+    <path d="M0 80 C200 40, 400 100, 600 60 S1000 40, 1200 70 S1400 50, 1584 80 L1584 120 L0 120Z" fill="rgba(82,183,136,0.08)"/>
+    <path d="M0 95 C250 65, 500 110, 750 80 S1100 60, 1350 90 S1500 70, 1584 95 L1584 120 L0 120Z" fill="rgba(216,243,220,0.06)"/>
+  </svg>
+
+  <div class="banner-content">
+    <div class="banner-left">
+      <div class="banner-label">Founder &amp; Principal</div>
+      <div class="banner-title">AI Strategy<br>&amp; Governance</div>
+      <div class="banner-credentials">
+        <span>Adjunct Professor, Trinity Business School</span>
+        <span class="divider">|</span>
+        <span>Research Fellow, ADAPT Centre</span>
+        <span class="divider">|</span>
+        <span>Former Global Head of AI, BNY Mellon</span>
+      </div>
+    </div>
+    <div class="banner-right">
+      <div class="banner-logo">
+        <img src="../../noval-icon.png" alt="Noval">
+        <div class="banner-logo-text">Noval</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="note">Screenshot the banner above at full size for LinkedIn. The banner is exactly 1584x396px. Note: LinkedIn crops the bottom ~60px on mobile and the centre area is covered by your profile photo on desktop — key content is positioned to avoid these areas.</p>
+
+<h2 style="margin-top:60px">Preview at 50%</h2>
+<div class="preview-wrap">
+  <div class="banner">
+    <div class="gold-line"></div>
+    <svg class="waves" preserveAspectRatio="none" viewBox="0 0 1584 120">
+      <path d="M0 80 C200 40, 400 100, 600 60 S1000 40, 1200 70 S1400 50, 1584 80 L1584 120 L0 120Z" fill="rgba(82,183,136,0.08)"/>
+      <path d="M0 95 C250 65, 500 110, 750 80 S1100 60, 1350 90 S1500 70, 1584 95 L1584 120 L0 120Z" fill="rgba(216,243,220,0.06)"/>
+    </svg>
+    <div class="banner-content">
+      <div class="banner-left">
+        <div class="banner-label">Founder &amp; Principal</div>
+        <div class="banner-title">AI Strategy<br>&amp; Governance</div>
+        <div class="banner-credentials">
+          <span>Adjunct Professor, Trinity Business School</span>
+          <span class="divider">|</span>
+          <span>Research Fellow, ADAPT Centre</span>
+          <span class="divider">|</span>
+          <span>Former Global Head of AI, BNY Mellon</span>
+        </div>
+      </div>
+      <div class="banner-right">
+        <div class="banner-logo">
+          <img src="../../noval-icon.png" alt="Noval">
+          <div class="banner-logo-text">Noval</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
