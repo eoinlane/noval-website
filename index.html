@@ -6,13 +6,41 @@
 <link rel="icon" type="image/png" sizes="192x192" href="noval-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Noval Consulting | Responsible AI</title>
-<meta name="description" content="Noval Consulting helps European businesses harness AI responsibly — EU AI Act compliance, AI strategy, and governance from a team with 15 years of enterprise AI leadership.">
+<meta name="description" content="Noval Consulting helps European businesses harness AI responsibly: EU AI Act compliance, AI strategy, and governance from a team with 15 years of enterprise AI leadership.">
 <meta property="og:title" content="Noval Consulting | Responsible AI">
 <meta property="og:description" content="Navigate the EU AI Act with confidence. AI strategy, compliance, and governance consultancy founded by former Global Head of AI at BNY Mellon.">
 <meta property="og:image" content="https://noval.ie/noval-icon.png">
 <meta property="og:url" content="https://noval.ie">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Noval Consulting",
+  "url": "https://noval.ie",
+  "logo": "https://noval.ie/noval-icon.png",
+  "description": "Responsible AI consultancy specialising in EU AI Act compliance, AI strategy, and governance for European businesses.",
+  "founder": {
+    "@type": "Person",
+    "name": "Eoin Lane",
+    "jobTitle": "Founder & CEO",
+    "sameAs": "https://www.linkedin.com/in/laneeoin/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dublin",
+    "addressCountry": "IE"
+  },
+  "email": "info@novalconsultancy.com",
+  "telephone": "+353830270372",
+  "sameAs": [
+    "https://www.linkedin.com/company/noval-consultancy/",
+    "https://www.linkedin.com/in/laneeoin/"
+  ],
+  "serviceType": ["EU AI Act Compliance", "AI Strategy & Governance", "AI Readiness & Transformation"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -118,23 +146,27 @@ footer a:hover{color:#fff}
 .social-links{display:flex;gap:16px}
 .social-links a{display:inline-flex;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);align-items:center;justify-content:center;margin:0;transition:background .2s}
 .social-links a:hover{background:rgba(255,255,255,.15)}
+.skip-link{position:absolute;top:-40px;left:0;background:var(--deep-forest);color:#fff;padding:8px 16px;z-index:1000;font-size:14px;text-decoration:none;transition:top .2s}.skip-link:focus{top:0}
 @media(max-width:600px){nav{padding:12px 20px}.nav-logo span{font-size:20px}.nav-links{gap:0}.nav-links a:not(.btn){display:none}.trust-bar{padding:20px 24px;gap:12px;flex-direction:column;align-items:flex-start}.trust-hide-mobile{display:none}.trust-item .number{font-size:22px}}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-image{min-height:300px}.services-grid,.approach-grid,.insights-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}nav{padding:16px 24px}.nav-links{gap:20px}.hero-content{padding:60px 24px}.services,.approach{padding:60px 24px}.about-section,.origin,.cta-section{padding:60px 24px}.case-studies-section{padding:60px 24px}footer{padding:40px 24px 20px}}
 </style>
 </head>
 <body>
 
-<nav>
-<a href="#" class="nav-logo">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Main navigation">
+<a href="index.html" class="nav-logo">
 <img src="noval-icon.png" alt="Noval Icon" width="40" height="40">
 <span>Noval</span></a>
 <div class="nav-links">
-<a href="#">Services</a>
+<a href="#services">Services</a>
 <a href="about.html">About</a>
 <a href="#insights">Insights</a>
 <a href="contact.html" class="btn btn-primary" style="padding:10px 24px;font-size:14px">Book a Consultation</a>
 </div></nav>
 
+<main id="main">
 <section class="hero">
 <div class="hero-content">
 <div class="hero-label">Responsible AI Consultancy</div>
@@ -164,18 +196,18 @@ footer a:hover{color:#fff}
 <div class="service-card">
 <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/></svg></div>
 <h3>EU AI Act Compliance</h3>
-<p>Gap analysis, risk classification, and documentation support to ensure your AI systems meet EU regulatory requirements before enforcement deadlines.</p>
-<a href="#" class="service-link">Learn more &rarr;</a></div>
+<p>Gap analysis, risk classification under Annex III, and full documentation support, including conformity assessments, risk management systems, and human oversight design. We ensure your AI systems meet EU regulatory requirements well before the 2026 enforcement deadlines.</p>
+<a href="contact.html" class="service-link">Get started &rarr;</a></div>
 <div class="service-card">
 <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M2 20h20M5 20V10l7-7 7 7v10"/><path d="M9 20v-6h6v6"/></svg></div>
 <h3>AI Strategy &amp; Governance</h3>
-<p>Build robust AI governance frameworks, ethics policies, and organizational structures that enable responsible AI adoption at scale.</p>
-<a href="#" class="service-link">Learn more &rarr;</a></div>
+<p>Build robust AI governance frameworks, ethics policies, and organizational structures that enable responsible AI adoption at scale. We define your AI operating model, from use-case prioritization and model governance to board-level reporting and risk oversight.</p>
+<a href="contact.html" class="service-link">Get started &rarr;</a></div>
 <div class="service-card">
 <div class="service-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
 <h3>AI Readiness &amp; Transformation</h3>
-<p>Assess your organization's AI maturity, build actionable roadmaps, and guide enterprise-scale implementation from proof-of-concept to production.</p>
-<a href="#" class="service-link">Learn more &rarr;</a></div>
+<p>Assess your organization's AI maturity, build actionable roadmaps, and guide enterprise-scale implementation from proof-of-concept to production. We help you structure teams, select technology, and deliver measurable business outcomes from AI investments.</p>
+<a href="contact.html" class="service-link">Get started &rarr;</a></div>
 </div></section>
 
 <section class="about-section">
@@ -183,8 +215,8 @@ footer a:hover{color:#fff}
 <div>
 <div class="section-label">Why Noval</div>
 <h2 class="section-title">15 Years Delivering Enterprise AI</h2>
-<p>Founded by Eoin Lane &mdash; former Global Head of AI at BNY Mellon, IBM Master Inventor, Adjunct Professor at Trinity Business School, and Research Fellow at the ADAPT Centre &mdash; Noval brings battle-tested experience in delivering Responsible AI at enterprise scale.</p>
-<p>From leading global AI teams at the world's largest financial institutions to co-leading Ireland's first local government Generative AI Lab, Eoin has spent 15 years turning AI ambition into measurable business outcomes &mdash; always with responsibility at the core.</p>
+<p>Founded by Eoin Lane (former Global Head of AI at BNY Mellon, IBM Master Inventor, Adjunct Professor at Trinity Business School, and Research Fellow at the ADAPT Centre), Noval brings battle-tested experience in delivering Responsible AI at enterprise scale.</p>
+<p>From leading global AI teams at the world's largest financial institutions to co-leading Ireland's first local government Generative AI Lab, Eoin has spent 15 years turning AI ambition into measurable business outcomes, always with responsibility at the core.</p>
 <a href="about.html" class="btn btn-white" style="margin-top:20px">Meet the Team</a>
 </div>
 <div class="stats-grid">
@@ -209,8 +241,7 @@ footer a:hover{color:#fff}
 <section class="origin">
 <div class="origin-inner">
 <img src="noval-icon.png" alt="Noval" width="60" height="60" style="margin-bottom:24px;opacity:.3">
-<blockquote>Inspired by Nohoval Cove's untouched beauty in County Cork, Noval reflects AI's vast, uncharted potential. Like the cove's raw landscape, AI offers boundless opportunities that require thoughtful navigation.</blockquote>
-<p class="attribution">The Noval Story &mdash; Where nature meets innovation</p>
+<blockquote>Named after Nohoval Cove on the Cork coast. The name comes from the Irish <em>Nuachabh&aacute;il</em>, meaning 'new habitation.' AI is new territory for every organisation that touches it, and like the cove, it rewards those who navigate it with care.</blockquote>
 </div></section>
 
 <section class="insights" id="insights">
@@ -226,7 +257,7 @@ footer a:hover{color:#fff}
 <img src="noval-icon.png" alt="Noval" width="72" height="72">
 </div>
 <div class="insight-body">
-<h3>The EU AI Act Is Here &mdash; And It's a Game Changer</h3>
+<h3>The EU AI Act Is Here, and It's a Game Changer</h3>
 <p>Breaking down what the EU AI Act means for businesses and why compliance needs to start now.</p>
 <span class="insight-link">Watch on LinkedIn &rarr;</span>
 </div></a>
@@ -262,10 +293,19 @@ footer a:hover{color:#fff}
 </div>
 <a href="case-studies.html#diotima" class="cs-card">
 <div class="cs-card-tag">EdTech</div>
-<h3>Diotima — AI-Powered Formative Assessment Platform for Irish Secondary Education</h3>
-<p>Helped Diotima build a compliance-grade, curriculum-aligned AI platform purpose-built for the Leaving Certificate — where the EU AI Act's Annex III obligations shaped every architectural decision from day one.</p>
+<h3>Diotima: AI-Powered Formative Assessment Platform for Irish Secondary Education</h3>
+<p>Helped Diotima build a compliance-grade, curriculum-aligned AI platform purpose-built for the Leaving Certificate, where the EU AI Act's Annex III obligations shaped every architectural decision from day one.</p>
 <div class="cs-card-meta">
-<span>Diotima &mdash; 2025&ndash;2026</span>
+<span>Diotima, 2025&ndash;2026</span>
+<span class="cs-card-link">Read case study &rarr;</span>
+</div>
+</a>
+<a href="case-studies.html#global-custodian" class="cs-card" style="margin-top:24px">
+<div class="cs-card-tag">Financial Services</div>
+<h3>Enterprise AI at Scale: Governance-First AI Practice at a Global Financial Institution</h3>
+<p>Led the transformation from scattered analytics to a governed, enterprise-scale AI practice delivering 30+ production solutions and over $100M in revenue at the world's largest custodian bank.</p>
+<div class="cs-card-meta">
+<span>Global Custodian Bank, 2020&ndash;2024</span>
 <span class="cs-card-link">Read case study &rarr;</span>
 </div>
 </a>
@@ -279,8 +319,9 @@ footer a:hover{color:#fff}
 <a href="contact.html" class="btn btn-white">Book a Consultation</a>
 <a href="#services" class="btn btn-gold">View Our Services</a>
 </div></section>
+</main>
 
-<footer>
+<footer aria-label="Site footer">
 <div class="footer-grid">
 <div class="footer-brand">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
@@ -290,9 +331,9 @@ footer a:hover{color:#fff}
 <p>Empowering businesses to harness AI responsibly while navigating the complexities of compliance and governance.</p>
 </div>
 <div><h4>Services</h4>
-<a href="#">EU AI Act Compliance</a>
-<a href="#">AI Strategy &amp; Governance</a>
-<a href="#">AI Readiness</a></div>
+<a href="#services">EU AI Act Compliance</a>
+<a href="#services">AI Strategy &amp; Governance</a>
+<a href="#services">AI Readiness</a></div>
 <div><h4>Company</h4>
 <a href="about.html">About</a>
 <a href="case-studies.html">Case Studies</a>

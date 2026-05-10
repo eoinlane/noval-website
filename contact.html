@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="noval-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Noval Consulting</title>
-<meta name="description" content="Get in touch with Noval Consulting — EU AI Act compliance, AI strategy, and governance support. We respond within one business day.">
+<meta name="description" content="Get in touch with Noval Consulting for EU AI Act compliance, AI strategy, and governance support. We respond within one business day.">
 <meta property="og:title" content="Contact | Noval Consulting">
 <meta property="og:description" content="Ready to navigate AI with confidence? Contact Noval Consulting for EU AI Act compliance and AI strategy support.">
 <meta property="og:image" content="https://noval.ie/noval-icon.png">
@@ -99,14 +99,19 @@ footer a:hover{color:#fff}
   .contact-body{padding:60px 24px;grid-template-columns:1fr;gap:48px}
   .form-row{grid-template-columns:1fr}
   .contact-form-wrap{padding:32px 24px}
+  .expect-grid{grid-template-columns:1fr !important}
+  .expect-wrap{padding:32px 24px !important;margin:0 24px !important}
   footer{padding:40px 24px 20px}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
+.skip-link{position:absolute;top:-40px;left:0;background:var(--deep-forest);color:#fff;padding:8px 16px;z-index:1000;font-size:14px;text-decoration:none;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
 
-<nav>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Main navigation">
 <a href="index.html" class="nav-logo">
 <img src="noval-icon.png" alt="Noval Icon" width="40" height="40">
 <span>Noval</span></a>
@@ -117,6 +122,7 @@ footer a:hover{color:#fff}
 <a href="contact.html" class="btn btn-primary" style="padding:10px 24px;font-size:14px">Book a Consultation</a>
 </div></nav>
 
+<main id="main">
 <section class="page-hero">
 <div class="section-label">Get in Touch</div>
 <h1>Let's Talk</h1>
@@ -200,7 +206,34 @@ footer a:hover{color:#fff}
 </div>
 </div>
 
-<footer>
+<div style="max-width:1200px;margin:0 auto;padding:0 60px 80px" class="expect-wrap">
+<div style="background:var(--off-white);border-radius:16px;padding:48px;border:1px solid var(--light-grey)">
+<div style="text-align:center;margin-bottom:40px">
+<div class="section-label">What to Expect</div>
+<h2 class="section-title" style="font-size:32px">How We Work Together</h2>
+</div>
+<div class="expect-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center">
+<div>
+<div style="width:52px;height:52px;border-radius:50%;background:var(--deep-forest);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-heading);font-size:24px">1</div>
+<h3 style="font-size:17px;font-weight:700;color:var(--deep-forest);margin-bottom:8px">Discovery Call</h3>
+<p style="font-size:14px;line-height:1.6;color:var(--text-secondary)">We'll schedule a 30-minute call to understand your challenge, goals, and current AI landscape.</p>
+</div>
+<div>
+<div style="width:52px;height:52px;border-radius:50%;background:var(--deep-forest);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-heading);font-size:24px">2</div>
+<h3 style="font-size:17px;font-weight:700;color:var(--deep-forest);margin-bottom:8px">Tailored Proposal</h3>
+<p style="font-size:14px;line-height:1.6;color:var(--text-secondary)">Within one week, you'll receive a clear proposal with scope, approach, timeline, and investment.</p>
+</div>
+<div>
+<div style="width:52px;height:52px;border-radius:50%;background:var(--deep-forest);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-heading);font-size:24px">3</div>
+<h3 style="font-size:17px;font-weight:700;color:var(--deep-forest);margin-bottom:8px">Engagement Begins</h3>
+<p style="font-size:14px;line-height:1.6;color:var(--text-secondary)">Once aligned, we kick off with a structured assessment phase and regular checkpoints throughout.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer aria-label="Site footer">
 <div class="footer-grid">
 <div class="footer-brand">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">

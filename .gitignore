@@ -1,3 +1,9 @@
 .claude/settings.local.json
 .DS_Store
 **/.DS_Store
+
+# Local working files (not for the live site)
+IMG_*.jpeg
+IMG_*.jpg
+*-original.jpg
+*-original.jpeg

@@ -6,9 +6,9 @@
 <link rel="icon" type="image/png" sizes="192x192" href="noval-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Noval Consulting</title>
-<meta name="description" content="Meet Eoin Lane, founder of Noval Consulting — former Global Head of AI at BNY Mellon, IBM Master Inventor, 70+ patents, and 15 years leading enterprise AI.">
+<meta name="description" content="Meet Eoin Lane, founder of Noval Consulting. Former Global Head of AI at BNY Mellon, IBM Master Inventor, 70+ patents, and 15 years leading enterprise AI.">
 <meta property="og:title" content="About | Noval Consulting">
-<meta property="og:description" content="Meet Eoin Lane — former Global Head of AI at BNY Mellon, IBM Master Inventor, and founder of Noval Consulting.">
+<meta property="og:description" content="Meet Eoin Lane: former Global Head of AI at BNY Mellon, IBM Master Inventor, and founder of Noval Consulting.">
 <meta property="og:image" content="https://noval.ie/noval-icon.png">
 <meta property="og:url" content="https://noval.ie/about.html">
 <meta property="og:type" content="website">
@@ -109,11 +109,14 @@ footer a:hover{color:#fff}
   footer{padding:40px 24px 20px}
   .footer-grid{grid-template-columns:1fr 1fr}
 }
+.skip-link{position:absolute;top:-40px;left:0;background:var(--deep-forest);color:#fff;padding:8px 16px;z-index:1000;font-size:14px;text-decoration:none;transition:top .2s}.skip-link:focus{top:0}
 </style>
 </head>
 <body>
 
-<nav>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Main navigation">
 <a href="index.html" class="nav-logo">
 <img src="noval-icon.png" alt="Noval Icon" width="40" height="40">
 <span>Noval</span></a>
@@ -121,9 +124,11 @@ footer a:hover{color:#fff}
 <a href="index.html#services">Services</a>
 <a href="about.html" class="active">About</a>
 <a href="index.html#insights">Insights</a>
+
 <a href="contact.html" class="btn btn-primary" style="padding:10px 24px;font-size:14px">Book a Consultation</a>
 </div></nav>
 
+<main id="main">
 <section class="page-hero">
 <div class="section-label">Who We Are</div>
 <h1>About Noval</h1>
@@ -139,7 +144,8 @@ footer a:hover{color:#fff}
 <div class="section-label">Founder &amp; Principal</div>
 <h2 class="section-title">Eoin Lane</h2>
 <p>A seasoned AI executive with a proven track record of delivering transformative, enterprise-scale AI solutions. Renowned for leading global teams of data scientists and engineers, Eoin combines cutting-edge AI technologies, design thinking, and engineering excellence to create scalable and responsible AI applications.</p>
-<p>Eoin is a recipient of multiple industry awards, including winning the Gartner Eye on Innovation Award in 2020 and being shortlisted again in 2022. He spearheaded the establishment of a &euro;8 million Digital R&amp;D Hub in Dublin, recognised by IDA Ireland, positioning BNY Mellon at the forefront of AI, data science, and emerging technologies — including quantum computing.</p>
+<p>Alongside leading Noval Consulting, Eoin is an <strong>Adjunct Professor at Trinity Business School</strong>, where he teaches AI strategy, responsible AI, and digital transformation. He is also a <strong>Research Fellow at the ADAPT Centre</strong>, co-leading the DCC/ADAPT Generative AI Lab, Ireland's first local government generative AI research initiative.</p>
+<p>Eoin is a recipient of multiple industry awards, including winning the Gartner Eye on Innovation Award in 2020 and being shortlisted again in 2022. He spearheaded the establishment of a &euro;8 million Digital R&amp;D Hub in Dublin, recognised by IDA Ireland, positioning BNY Mellon at the forefront of AI, data science, and emerging technologies, including quantum computing.</p>
 <p>An IBM Master Inventor, Eoin holds over 70 patents and patents pending, alongside several dozen publications, showcasing deep technical expertise and a sustained commitment to innovation.</p>
 <p>With a passion for driving impactful AI solutions, Eoin now leads Noval Consulting, helping businesses unlock the full potential of artificial intelligence while navigating the complexities of compliance and governance.</p>
 <a href="https://www.linkedin.com/in/laneeoin/" target="_blank" rel="noopener" class="btn btn-primary">Connect on LinkedIn</a>
@@ -172,8 +178,7 @@ footer a:hover{color:#fff}
 <div class="origin-inner">
 <img src="noval-icon.png" alt="Noval" width="60" height="60" style="margin-bottom:24px;opacity:.3;filter:brightness(0) invert(1)">
 <div class="section-label" style="color:var(--gold-light)">Our Name</div>
-<blockquote>Inspired by Nohoval Cove's untouched beauty in County Cork, Noval reflects AI's vast, uncharted potential. Like the cove's raw landscape, AI offers boundless opportunities that require thoughtful navigation.</blockquote>
-<p class="attribution">The Noval Story &mdash; Where nature meets innovation</p>
+<blockquote>Named after Nohoval Cove on the Cork coast. The name comes from the Irish <em>Nuachabh&aacute;il</em>, meaning 'new habitation.' AI is new territory for every organisation that touches it, and like the cove, it rewards those who navigate it with care.</blockquote>
 </div>
 </section>
 
@@ -185,8 +190,9 @@ footer a:hover{color:#fff}
 <a href="index.html#services" class="btn btn-gold">View Our Services</a>
 </div>
 </section>
+</main>
 
-<footer>
+<footer aria-label="Site footer">
 <div class="footer-grid">
 <div class="footer-brand">
 <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
