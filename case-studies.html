@@ -81,11 +81,52 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6
 .work-item-body h4{font-size:16px;font-weight:700;color:var(--deep-forest);margin-bottom:10px;line-height:1.3}
 .work-item-body p{font-size:14px;line-height:1.7;color:var(--text-secondary);margin:0}
 
+/* Testimonial pull quote */
+.cs-testimonial{margin:0;padding:36px 40px;background:#fff;border:1px solid var(--light-grey);border-left:4px solid var(--warm-gold);border-radius:0 12px 12px 0}
+.cs-testimonial p{font-family:var(--font-heading);font-size:22px;line-height:1.5;color:var(--deep-forest);margin:0 0 20px 0;font-style:italic}
+.cs-testimonial p:before{content:"\201C";margin-right:1px}
+.cs-testimonial p:after{content:"\201D";margin-left:1px}
+.cs-testimonial footer{font-size:14px;color:var(--text-secondary);font-style:normal;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:transparent;padding:0}
+.cs-testimonial footer strong{color:var(--deep-forest);font-weight:700}
+.cs-testimonial footer .sep{color:var(--text-muted);opacity:.6}
+.cs-testimonial cite{font-style:normal}
+@media(max-width:600px){.cs-testimonial{padding:26px 22px}.cs-testimonial p{font-size:18px}}
+
 /* Outcome box */
 .outcome-box{background:var(--deep-forest);border-radius:12px;padding:40px;color:#fff}
 .outcome-box h3{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--gold-light);margin-bottom:20px}
 .outcome-box p{font-size:16px;line-height:1.8;color:rgba(255,255,255,.85);margin-bottom:16px}
 .outcome-box p:last-child{margin-bottom:0}
+.outcome-box a{color:var(--gold-light);font-weight:600;text-decoration:underline}
+.outcome-box a:hover{color:#fff}
+
+/* Whitepaper CTA + lifecycle visual */
+.cs-whitepaper-cta{display:inline-flex;align-items:center;gap:10px;background:var(--warm-gold);color:#fff;padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s;margin-bottom:40px}
+.cs-whitepaper-cta:hover{background:var(--gold-light);color:#fff}
+.lifecycle-deck{background:#FBF6E9;padding:40px 34px 36px;border-radius:12px;border:1px solid #EFE3C6}
+.lifecycle-deck-sub{font-style:italic;color:var(--text-secondary);font-size:14px;margin:0 0 32px 0}
+.lifecycle-deck-sub::before{content:'';display:block;width:42px;height:3px;background:var(--deep-forest);margin-bottom:14px}
+.lifecycle-board{position:relative}
+.ls-row{display:grid;align-items:start;gap:0 14px}
+.ls-row-top{grid-template-columns:1fr 36px 1fr 36px 1fr 36px 1fr}
+.ls-row-bottom{grid-template-columns:1fr 36px 1fr 36px 1fr;margin-left:24%}
+.ls-card-deck{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+.ls-card-deck .icon{color:var(--warm-gold);margin-bottom:14px;height:34px;display:flex;align-items:center}
+.ls-card-deck .icon svg{width:32px;height:32px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ls-card-deck .name{font-family:var(--font-body);font-size:13px;font-weight:700;color:var(--warm-gold);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;line-height:1.2}
+.ls-card-deck .desc{font-size:14px;color:var(--deep-forest);line-height:1.5}
+.ls-card-deck.gate .name::after{content:' \B7 Teacher gate';font-size:10px;font-weight:600;letter-spacing:1.5px;color:var(--deep-forest);opacity:.55}
+.ls-arrow-deck{display:flex;align-items:center;justify-content:center;color:var(--warm-gold);padding-top:7px;height:34px}
+.ls-arrow-deck svg{width:36px;height:16px;fill:currentColor}
+.ls-connector{position:relative;height:56px;margin:14px 0 6px 0}
+.ls-connector::before{content:'';position:absolute;top:0;right:7%;left:24%;height:32px;border:3px solid var(--warm-gold);border-top:none;border-left:none;border-radius:0 0 6px 0}
+.ls-connector::after{content:'';position:absolute;top:32px;left:24%;transform:translateX(-50%);border-left:8px solid transparent;border-right:8px solid transparent;border-top:14px solid var(--warm-gold)}
+.lifecycle-caption{font-size:13px;color:var(--text-muted);font-style:italic;text-align:center;margin-top:20px;line-height:1.6;max-width:680px;margin-left:auto;margin-right:auto}
+@media(max-width:780px){
+.ls-row-top,.ls-row-bottom{grid-template-columns:1fr;gap:28px;margin-left:0}
+.ls-arrow-deck,.ls-connector{display:none}
+.lifecycle-deck{padding:28px 22px}
+}
 
 /* CTA */
 .cta-section{background:linear-gradient(135deg,var(--deep-forest) 0%,var(--emerald) 60%,var(--sage) 100%);padding:100px 60px;text-align:center;color:#fff}
@@ -170,13 +211,89 @@ footer a:hover{color:#fff}
 <div class="cs-content">
 <div class="section-label">Case Study 01</div>
 <h2>Diotima: AI-Powered Formative Assessment Platform for Irish Secondary Education</h2>
-<p class="cs-intro">Helping Diotima build a compliance-grade, curriculum-aligned AI formative assessment platform purpose-built for the Leaving Certificate, where generic AI tools fail on Irish context, and where EU AI Act obligations shaped every architectural decision from day one.</p>
+<p class="cs-intro">A year of working out what it actually takes to put AI in front of a teacher, and a learner, and deserve to be there. Architectures that make human oversight structural rather than optional. Transparency calibrated to the audience that needs it. Data discipline that says no to features that would have been easy to ship. EU AI Act compliance treated as a design specification rather than a paperwork exercise.</p>
+
+<a href="https://lnkd.in/d7Z6Ca5e" class="cs-whitepaper-cta" target="_blank" rel="noopener">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+Read the whitepaper
+</a>
+
+<div class="cs-section">
+<blockquote class="cs-testimonial">
+<p>Eoin, you have been fundamental to the development of Diotima. We knew that governance would be a cornerstone. What we didn't know was how to go about it with rigour.</p>
+<footer><strong>Jonathan Dempsey</strong><span class="sep">&middot;</span>CEO, <cite>Diotima</cite></footer>
+</blockquote>
+</div>
 
 <div class="cs-section">
 <h3>Background</h3>
 <p>Diotima set out to build an AI-powered formative assessment platform tailored to the Irish secondary school curriculum, specifically targeting Leaving Certificate alignment. The challenge was significant on two fronts simultaneously.</p>
 <p>The first was pedagogical: Ireland's curriculum is highly specific, and generic AI tools consistently fail on Irish historical context, Irish language content, and the particular assessment rubrics used by the State Examinations Commission. Off-the-shelf solutions produce plausible-sounding content that does not survive contact with an Irish classroom.</p>
 <p>The second was regulatory. Under the EU AI Act, any AI system that analyses student responses and structures performance interpretation is classified as high-risk under Annex III, Section 3(a). That classification was not incidental to the product. It shaped every architectural and governance decision from the outset. From day one, Diotima was designed to meet those obligations, not to retrofit compliance onto an existing product.</p>
+</div>
+
+<div class="cs-section">
+<h3>The Formative Assessment Lifecycle</h3>
+<div class="lifecycle-deck" role="figure" aria-label="Seven-stage formative assessment lifecycle: Design, Approve, Respond, Reveal, Review, Reflect, Audit. Approve and Review are teacher gates.">
+<p class="lifecycle-deck-sub">Seven stages, from assessment design through to audit.</p>
+<div class="lifecycle-board">
+
+<div class="ls-row ls-row-top">
+<div class="ls-card-deck">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+<div class="name">Design</div>
+<div class="desc">Curriculum-grounded assessment design</div>
+</div>
+<div class="ls-arrow-deck" aria-hidden="true"><svg viewBox="0 0 36 14"><path d="M0 4 H24 V0 L36 7 L24 14 V10 H0 Z"/></svg></div>
+
+<div class="ls-card-deck gate">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><polyline points="9 14 11 16 15 12"/></svg></div>
+<div class="name">Approve</div>
+<div class="desc">Teacher pre-approval of all generated content</div>
+</div>
+<div class="ls-arrow-deck" aria-hidden="true"><svg viewBox="0 0 36 14"><path d="M0 4 H24 V0 L36 7 L24 14 V10 H0 Z"/></svg></div>
+
+<div class="ls-card-deck">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+<div class="name">Respond</div>
+<div class="desc">Student response and optional AI pre-check</div>
+</div>
+<div class="ls-arrow-deck" aria-hidden="true"><svg viewBox="0 0 36 14"><path d="M0 4 H24 V0 L36 7 L24 14 V10 H0 Z"/></svg></div>
+
+<div class="ls-card-deck">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+<div class="name">Reveal</div>
+<div class="desc">Conditional rubric visibility for students</div>
+</div>
+</div>
+
+<div class="ls-connector" aria-hidden="true"></div>
+
+<div class="ls-row ls-row-bottom">
+<div class="ls-card-deck gate">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+<div class="name">Review</div>
+<div class="desc">Teacher review, override, and finalisation</div>
+</div>
+<div class="ls-arrow-deck" aria-hidden="true"><svg viewBox="0 0 36 14"><path d="M0 4 H24 V0 L36 7 L24 14 V10 H0 Z"/></svg></div>
+
+<div class="ls-card-deck">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+<div class="name">Reflect</div>
+<div class="desc">Student feedback and reflection</div>
+</div>
+<div class="ls-arrow-deck" aria-hidden="true"><svg viewBox="0 0 36 14"><path d="M0 4 H24 V0 L36 7 L24 14 V10 H0 Z"/></svg></div>
+
+<div class="ls-card-deck">
+<div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+<div class="name">Audit</div>
+<div class="desc">Comprehensive logging and auditability</div>
+</div>
+</div>
+
+</div>
+</div>
+<p class="lifecycle-caption">Stages 1-4 flow left to right, then the workflow wraps to stages 5-7 below. Approve and Review are teacher gates: no AI output reaches a student without passing through both. The AI proposes; the teacher decides.</p>
 </div>
 
 <div class="cs-section">
@@ -188,18 +305,8 @@ footer a:hover{color:#fff}
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Compliance-Grade Architecture from First Principles</h4>
-<p>The most consequential early decision was to treat the EU AI Act's Annex III classification as a design brief rather than a documentation task. This meant scoping the high-risk components narrowly (the Question, Answer and Rubric Generation Engine, and the AI Inference and Feedback Engine) and separating them cleanly from supporting infrastructure. Every architectural choice was oriented by that classification, which simplified governance, reduced risk propagation, and made the compliance case tractable for the team building it.</p>
-</div>
-</li>
-
-<li class="work-item">
-<div class="work-item-icon">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-</div>
-<div class="work-item-body">
-<h4>Curriculum Alignment and Grounded Content Generation</h4>
-<p>Advised on how to structure content ingestion and retrieval so the platform could accurately map questions and learning objectives to specific Leaving Cert syllabus strands. The approach required custom solutions rather than off-the-shelf RAG: all AI-generated questions, answers, and rubrics are explicitly linked to curriculum topics, learning outcomes, Bloom's Taxonomy cognitive levels, and approved, licensed source-of-truth materials. This grounding simultaneously prevents hallucination, ensures curriculum fidelity, and enables clear traceability, giving teachers the visibility they need to make informed approval decisions and giving regulators a clear basis for understanding why any given item exists.</p>
+<h4>Compliance-Grade Architecture and Curriculum Grounding</h4>
+<p>The most consequential early decision was to treat the EU AI Act's Annex III classification as a design brief rather than a documentation task. That meant scoping the high-risk components narrowly (the Question, Answer and Rubric Generation Engine, and the AI Inference and Feedback Engine) and separating them cleanly from supporting infrastructure. Within that perimeter, every AI-generated question, answer, and rubric is explicitly grounded in curriculum topics, learning outcomes, Bloom's Taxonomy cognitive levels, and approved, licensed source materials. The architecture and the content discipline are the same idea: keep the model from drifting, give teachers the visibility to approve confidently, and give regulators a clear basis for understanding why any given item exists.</p>
 </div>
 </li>
 
@@ -209,7 +316,7 @@ footer a:hover{color:#fff}
 </div>
 <div class="work-item-body">
 <h4>Human Oversight as a Structural Feature, Not a Policy Statement</h4>
-<p>A central challenge in the product design was operationalising Article 14 (Human Oversight) in a way that was real rather than nominal. The solution was to enforce oversight through the workflow itself: teachers must approve every generated assessment item before any student sees it; AI rubric placements are always provisional; teachers can accept, edit, override, or replace any output at any stage; and only teacher-confirmed results are stored as authoritative. Students never receive AI-generated feedback that has not been reviewed by a teacher. That is a technical constraint embedded in the system, not an aspiration in a policy document.</p>
+<p>Operationalising Article 14 (Human Oversight) in a way that was real rather than nominal meant enforcing oversight through the workflow itself. Teachers must approve every generated assessment item before any student sees it. AI rubric placements are always provisional. Teachers can accept, edit, override, or replace any output at any stage, and only teacher-confirmed results are stored as authoritative. Students never receive AI-generated feedback that has not been reviewed by a teacher. That is a technical constraint embedded in the system, not an aspiration in a policy document. Explainability is calibrated the same way: teachers see the full reasoning and source materials behind every output; students see performance bands progressively, after a genuine attempt, in a way that supports learning rather than gaming.</p>
 </div>
 </li>
 
@@ -218,18 +325,8 @@ footer a:hover{color:#fff}
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
 </div>
 <div class="work-item-body">
-<h4>Model Selection and Responsible Evaluation</h4>
-<p>Worked through the model selection and prompting strategy for generating exam-style questions and marking rubrics, including the particular challenges of Irish history and Irish language content that generic models handle poorly. Model choice was treated as a governance decision: candidates were evaluated against structured benchmarks covering knowledge and reasoning, factuality and hallucination, instruction following, bias and fairness, and toxicity and safety. No student data is used for model training at any stage. Model versions are logged per inference to support audit and post-market monitoring.</p>
-</div>
-</li>
-
-<li class="work-item">
-<div class="work-item-icon">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-</div>
-<div class="work-item-body">
-<h4>Teacher Pilot Programme and Post-Market Monitoring</h4>
-<p>Supported the design of an early pilot with Irish teachers, helping define what "good" looked like for AI-generated content in an Irish classroom context, and how to gather structured feedback to improve the system. The teacher approval and rejection workflow was designed as a continuous monitoring mechanism. Every rejection reason is a signal about model performance in real educational contexts that feeds back into the risk register and model governance process. Compliance, in this design, is something the system generates evidence for as a byproduct of normal operation.</p>
+<h4>Model Governance and Continuous Monitoring</h4>
+<p>Model choice was treated as a governance decision, not a technical one. Candidates were evaluated against a structured benchmark suite covering knowledge and reasoning, factuality, instruction following, bias and fairness, and toxicity and safety. No student data is used for model training at any stage. Model versions are logged per inference to support audit and incident investigation. The teacher approval and rejection workflow doubles as a continuous monitoring mechanism: every rejection is a signal about model performance in a real Irish classroom, fed back into the risk register and model governance process. Compliance, in this design, is something the system generates evidence for as a byproduct of normal operation.</p>
 </div>
 </li>
 
@@ -239,7 +336,7 @@ footer a:hover{color:#fff}
 </div>
 <div class="work-item-body">
 <h4>Content Licensing Strategy and Investor Narrative</h4>
-<p>As the platform matured, content licensing with Irish publishers became a key risk. Helped identify this early and advised on how to structure publisher agreements explicitly covering storage, processing, and derivative use of licensed materials within the scope of Diotima's purpose. This became part of the investor narrative: the platform's differentiation (Irish-specific, curriculum-aligned, teacher-validated, and compliance-grade) was articulated not just as a product thesis but as a regulatory moat. In regulated education markets, compliance-by-design gives buyers access to institutions that non-compliant products simply cannot legally serve.</p>
+<p>As the platform matured, content licensing with Irish publishers became a key risk. We identified this early and advised on how to structure publisher agreements explicitly covering storage, processing, and derivative use of licensed materials within the scope of Diotima's purpose. This became part of the investor narrative: the platform's differentiation (Irish-specific, curriculum-aligned, teacher-validated, and compliance-grade) was articulated not just as a product thesis but as a regulatory moat. In regulated education markets, compliance-by-design gives buyers access to institutions that non-compliant products simply cannot legally serve.</p>
 </div>
 </li>
 
@@ -250,7 +347,8 @@ footer a:hover{color:#fff}
 <div class="outcome-box">
 <h3>Outcome</h3>
 <p>The platform moved from concept to working pilot with Irish secondary school teachers. The team developed a clear product thesis distinguishing Diotima from generic AI tutoring tools, grounded in the specific regulatory, pedagogical, and curricular context of the Irish education system.</p>
-<p>The compliance-by-design approach proved to be the most durable element of that differentiation. Most educational AI products treat regulation as friction. Diotima treats it as infrastructure. By embedding Annex III requirements into the architecture from the outset, the platform achieved something that post-hoc compliance cannot: genuine trustworthiness that institutions, teachers, and regulators can verify rather than merely assert. The curriculum alignment approach and the teacher-in-the-loop workflow together constitute a defensible technical and regulatory moat, one that becomes more valuable, not less, as the EU AI Act comes fully into force.</p>
+<p>The compliance-by-design approach proved to be the most durable element of that differentiation. Most educational AI products treat regulation as friction. Diotima treats it as infrastructure. By embedding Annex III requirements into the architecture from the outset, the platform achieved something that post-hoc compliance cannot: genuine trustworthiness that institutions, teachers, and regulators can verify rather than merely assert.</p>
+<p style="margin-top:24px"><a href="https://lnkd.in/d7Z6Ca5e" target="_blank" rel="noopener">Read the technical whitepaper &rarr;</a></p>
 </div>
 </div>
 
