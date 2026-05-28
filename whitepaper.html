@@ -63,9 +63,18 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6
 .wp-form-panel{background:var(--off-white);border-radius:14px;padding:36px 32px;border:1px solid var(--light-grey);position:sticky;top:100px}
 .wp-form-panel h3{font-family:var(--font-heading);font-size:24px;color:var(--deep-forest);margin-bottom:8px;line-height:1.25}
 .wp-form-panel .form-sub{font-size:14px;color:var(--text-secondary);margin-bottom:24px;line-height:1.55}
-.wp-form-placeholder{padding:28px 22px;background:#fff;border:2px dashed var(--warm-gold);border-radius:8px;font-size:13px;color:var(--text-secondary);line-height:1.55}
-.wp-form-placeholder strong{display:block;color:var(--deep-forest);font-size:14px;margin-bottom:10px}
-.wp-form-placeholder code{font-family:var(--font-mono);font-size:12px;background:var(--light-grey);padding:2px 6px;border-radius:3px;color:var(--deep-forest)}
+/* HubSpot form, restyled to match brand */
+.wp-form-panel .hs-form-field{margin-bottom:18px}
+.wp-form-panel .hs-form-field>label{display:block;font-size:13px;font-weight:600;color:var(--deep-forest);margin-bottom:6px}
+.wp-form-panel .hs-form-field>label .hs-form-required{color:#c0392b;margin-left:2px}
+.wp-form-panel .hs-input{width:100%!important;padding:11px 14px;border:1px solid var(--light-grey);border-radius:6px;font-family:var(--font-body);font-size:15px;color:var(--text-primary);background:#fff}
+.wp-form-panel .hs-input:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px rgba(82,183,136,.15)}
+.wp-form-panel .hs-button{background:var(--deep-forest);color:#fff;border:none;border-radius:6px;padding:13px 28px;font-family:var(--font-body);font-weight:600;font-size:15px;cursor:pointer;transition:background .2s;margin-top:6px}
+.wp-form-panel .hs-button:hover{background:var(--emerald)}
+.wp-form-panel .legal-consent-container{font-size:12px;color:var(--text-muted);line-height:1.5;margin-top:6px}
+.wp-form-panel .hs-form-booleancheckbox-display{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--text-secondary);line-height:1.45}
+.wp-form-panel .hs-form-booleancheckbox-display input{margin-top:2px}
+.wp-form-panel .hs-error-msg,.wp-form-panel .hs-error-msgs label{color:#c0392b;font-size:12.5px}
 
 @media(max-width:900px){
   nav{padding:16px 24px}.nav-links{gap:20px}
@@ -136,17 +145,17 @@ footer a:hover{color:#fff}
 <h3>Get the whitepaper</h3>
 <p class="form-sub">Fill in your details and we'll email you the PDF. We'll also let you know when the companion paper on operational metrics is published.</p>
 
-<!-- HUBSPOT FORM EMBED -->
-<!-- Replace the placeholder block below with your HubSpot form embed code.
-     HubSpot: Marketing > Forms > [your form] > Share > Embed code.
-     In the form settings, set the redirect-on-submit URL to:
-     https://noval.ie/whitepaper-thanks.html
-     Your portalId is 148581722, region is eu1. -->
-<div class="wp-form-placeholder">
-<strong>HubSpot form embed goes here.</strong>
-Paste the embed code from HubSpot (Marketing &rsaquo; Forms &rsaquo; your form &rsaquo; Share &rsaquo; Embed code) in place of this box.<br><br>
-Configure the form's submit redirect to <code>/whitepaper-thanks.html</code>. Your portalId is <code>148581722</code>, region <code>eu1</code>.
-</div>
+<!-- HubSpot form (portal 148581722, eu1). Submit redirects to /whitepaper-thanks.html. -->
+<div id="hs-whitepaper-form"></div>
+<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "148581722",
+    formId: "fafba337-5c99-42b3-9858-9464627911b3",
+    region: "eu1",
+    target: "#hs-whitepaper-form"
+  });
+</script>
 </div>
 
 </div>
