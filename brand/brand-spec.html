@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Noval Brand Guidelines</title>
+<title>Noval Brand Guidelines v1.1</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--deep-forest:#1B4332;--emerald:#2D6A4F;--sage:#52B788;--mint:#D8F3DC;--warm-gold:#B68D40;--gold-light:#D4A853;--off-white:#F8F9FA;--light-grey:#E9ECEF;--text-primary:#1B1B1B;--text-secondary:#555;--text-muted:#888}
@@ -11,9 +11,25 @@
 body{font-family:'Inter',-apple-system,sans-serif;color:var(--text-primary);background:#fff;max-width:960px;margin:0 auto;padding:60px 40px}
 h1{font-family:'DM Serif Display',Georgia,serif;font-size:42px;color:var(--deep-forest);margin-bottom:8px}
 h2{font-family:'DM Serif Display',Georgia,serif;font-size:28px;color:var(--deep-forest);margin:60px 0 20px;padding-top:40px;border-top:1px solid var(--light-grey)}
-h3{font-size:16px;font-weight:700;color:var(--deep-forest);margin:24px 0 8px}
+h3{font-size:16px;font-weight:700;color:var(--deep-forest);margin:32px 0 10px}
 p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
+ul{font-size:14px;line-height:1.8;color:var(--text-secondary);padding-left:24px;margin-bottom:16px}
 .subtitle{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--warm-gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px}
+.meta-box{background:var(--off-white);border:1px solid var(--light-grey);border-radius:12px;padding:24px 28px;margin:24px 0 40px;display:grid;grid-template-columns:max-content 1fr;column-gap:32px;row-gap:8px}
+.meta-label{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);align-self:center}
+.meta-value{font-size:14px;color:var(--text-primary)}
+.principle{padding:20px 24px;border-left:3px solid var(--warm-gold);background:var(--off-white);border-radius:0 12px 12px 0;margin-bottom:16px}
+.principle h4{font-family:'DM Serif Display',Georgia,serif;font-size:20px;color:var(--deep-forest);margin-bottom:8px;font-weight:400}
+.principle p{margin-bottom:0;font-size:14px;line-height:1.65}
+.callout{background:#F0FAF4;border-left:3px solid var(--sage);padding:16px 20px;border-radius:0 8px 8px 0;margin:16px 0;font-size:13px;line-height:1.6;color:var(--text-secondary)}
+.callout strong{color:var(--deep-forest)}
+.section-status{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--mint);color:var(--emerald);margin-left:12px;vertical-align:middle;font-weight:500}
+.toc{background:var(--off-white);border:1px solid var(--light-grey);border-radius:12px;padding:24px 28px;margin:24px 0 60px}
+.toc h3{margin-top:0;font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);font-family:'JetBrains Mono',monospace;font-weight:500}
+.toc ol{list-style:none;margin-top:12px;padding-left:0}
+.toc li{padding:6px 0;font-size:14px;color:var(--text-primary);border-bottom:1px solid var(--light-grey)}
+.toc li:last-child{border-bottom:none}
+.toc li .num{font-family:'JetBrains Mono',monospace;color:var(--text-muted);margin-right:12px;font-size:12px}
 .logo-row{display:flex;gap:32px;align-items:center;flex-wrap:wrap;margin:24px 0}
 .logo-box{padding:40px;border-radius:12px;display:flex;align-items:center;justify-content:center}
 .logo-box.light{background:var(--off-white);border:1px solid var(--light-grey)}
@@ -45,15 +61,74 @@ p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
 </head>
 <body>
 
-<div class="subtitle">Brand Guidelines</div>
-<h1>Noval Consulting</h1>
-<p>A complete reference for the Noval visual identity. These guidelines ensure consistency across all touchpoints — website, social media, presentations, and print.</p>
+<div class="subtitle">Brand Guidelines v1.1</div>
+<h1>Noval</h1>
+<p style="font-size:17px;color:var(--text-secondary);max-width:680px">The reference for how Noval looks, sounds, and shows up across every surface. Internal source of truth and the document we hand to collaborators, designers, and printers.</p>
 
-<!-- LOGO -->
-<h2>1. Logo</h2>
-<p>The Noval identity consists of two components: the <strong>icon mark</strong> (circular wave motif) and the <strong>wordmark</strong>. The icon is inspired by Nohoval Cove — flowing wave forms within a circle, representing AI's vast potential guided with purpose.</p>
+<div class="meta-box">
+<div class="meta-label">Owner</div><div class="meta-value">Eoin Lane</div>
+<div class="meta-label">Last reviewed</div><div class="meta-value">28 May 2026</div>
+<div class="meta-label">Next review</div><div class="meta-value">28 November 2026 (or on material change)</div>
+<div class="meta-label">Source files</div><div class="meta-value"><code>github.com/eoinlane/noval-website/brand/</code></div>
+<div class="meta-label">Questions</div><div class="meta-value">info@novalconsultancy.com</div>
+</div>
 
-<h3>Icon Mark</h3>
+<div class="toc">
+<h3>Contents</h3>
+<ol>
+<li><span class="num">01</span>Brand Foundation</li>
+<li><span class="num">02</span>Logo System</li>
+<li><span class="num">03</span>Colour System</li>
+<li><span class="num">04</span>Typography</li>
+<li><span class="num">05</span>Voice</li>
+<li><span class="num">06</span>Imagery</li>
+<li><span class="num">07</span>Applications</li>
+<li><span class="num">08</span>Governance</li>
+</ol>
+</div>
+
+<h2>1. Brand Foundation</h2>
+
+<h3>What we do</h3>
+<p>Noval is a responsible AI consultancy for organisations operating in regulated environments. We help clients design, govern, and scale AI systems that satisfy regulators, hold up to audit, and deliver measurable business outcomes.</p>
+
+<h3>Origin</h3>
+<p>Noval takes its name from Nohoval Cove on the Cork coast. The name comes from the Irish <em>Nuachabh&aacute;il</em>, meaning &lsquo;new habitation.&rsquo; The cove itself is a sheltered harbour opening to the Atlantic: contained, governed, with access to scale. That is the metaphor the company operates by. Boundaries that enable, not constrain.</p>
+
+<div class="callout">
+<strong>Editorial note.</strong> The cove framing should be used sparingly. It is the long version of the origin story for the About page, white papers, and pitch decks. Day-to-day copy should not lean on the metaphor every time the company is mentioned.
+</div>
+
+<h3>Brand principles</h3>
+<p>Three principles guide every design and copy decision. They are editorial checks, not slogans. When a draft feels off, run it past these.</p>
+
+<div class="principle">
+<h4>1. Authority without hype</h4>
+<p>Write from experience, not aspiration. Concrete numbers, named institutions, specific regulations. Claims that survive cross-examination. Where authority requires hedging, hedge. Avoid words that signal hype: <em>leverage, synergy, cutting-edge, disrupt, unlock, supercharge, revolutionary, game-changing</em>.</p>
+</div>
+
+<div class="principle">
+<h4>2. Irish, not parochial</h4>
+<p>The cove on the cover and the Irish words in the copy are commitments, not decoration. Noval operates in and from Ireland, with Irish clients, Irish regulators, and the Irish academic system. We also work for clients across the EU and Atlantic, and our work meets the standards of those markets. Heritage is the anchor, not the ceiling.</p>
+</div>
+
+<div class="principle">
+<h4>3. Substance over surface</h4>
+<p>Every design decision and every paragraph earns its place. If a section can be removed without loss, it is removed. If a sentence does not advance the argument, it is cut. The site is fast, the spec is short, the proposal is precise. Polish serves substance; it does not replace it.</p>
+</div>
+
+<h3>How to use these principles</h3>
+<p>Before publishing any external-facing artefact (website copy, deck, proposal, social post, white paper), check it against all three:</p>
+<ul>
+<li><strong>Authority test:</strong> Could a regulator or an expert reader challenge any claim here? If yes, fix it or remove it.</li>
+<li><strong>Irish test:</strong> Does the heritage read as commitment or as costume? Cut anything performative.</li>
+<li><strong>Substance test:</strong> If this paragraph were deleted, would the argument weaken? If no, delete it.</li>
+</ul>
+
+<h2>2. Logo System</h2>
+<p>The Noval identity has two components: the <strong>icon mark</strong> (a circular wave motif) and the <strong>wordmark</strong>. The icon draws on Nohoval Cove: flowing wave forms held within a circle, the same idea as the brand itself. Scale within a boundary.</p>
+
+<h3>Icon mark</h3>
 <div class="logo-row">
   <div class="logo-box light">
     <img src="logo/noval-icon.svg" alt="Noval icon" height="72">
@@ -62,9 +137,9 @@ p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
     <img src="logo/noval-icon.svg" alt="Noval icon on dark" height="72" style="filter:brightness(0) invert(1)">
   </div>
 </div>
-<p style="font-size:13px;color:var(--text-muted)">On dark backgrounds, the icon is inverted to white using CSS filter. SVG version scales to any size without quality loss.</p>
+<p style="font-size:13px;color:var(--text-muted)">On dark backgrounds the icon is inverted to white using a CSS filter. The SVG scales to any size without quality loss; use it in preference to the PNG everywhere except where a raster file is required (for example, favicons).</p>
 
-<h3>Icon + Wordmark</h3>
+<h3>Icon and wordmark</h3>
 <div class="logo-row">
   <div class="logo-box light" style="gap:12px">
     <img src="logo/noval-icon.svg" alt="Noval icon" height="40">
@@ -76,7 +151,7 @@ p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
   </div>
 </div>
 
-<h3>Wordmark Only</h3>
+<h3>Wordmark only</h3>
 <div class="logo-row">
   <div class="logo-box light">
     <img src="logo/noval-wordmark.svg" alt="Noval wordmark" height="40">
@@ -85,20 +160,19 @@ p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
 
 <div class="do-dont">
   <div class="do"><h4>Do</h4><ul>
-    <li>Use icon + wordmark wherever space allows</li>
+    <li>Use icon and wordmark together wherever space allows</li>
     <li>Use the icon mark alone for favicons, social avatars, and small contexts</li>
     <li>Maintain clear space equal to the icon's height on all sides</li>
   </ul></div>
   <div class="dont"><h4>Don't</h4><ul>
     <li>Stretch, rotate, or distort the logo</li>
-    <li>Change the logo colours outside approved variants</li>
+    <li>Change the logo colours outside the approved variants</li>
     <li>Place the logo on busy backgrounds without sufficient contrast</li>
   </ul></div>
 </div>
 
-<!-- COLOURS -->
-<h2>2. Colour Palette</h2>
-<p>The Noval palette is rooted in Ireland's natural landscape — deep forest greens for authority, sage and mint for freshness, and warm gold for premium distinction.</p>
+<h2>3. Colour System</h2>
+<p>The palette is rooted in Ireland's coastal landscape: deep forest greens for authority, sage and mint for freshness, and warm gold for premium distinction. Green carries the brand; gold is the accent, used sparingly.</p>
 
 <div class="colour-grid">
   <div class="colour-swatch"><div class="swatch" style="background:#1B4332"></div><div class="name">Deep Forest</div><div class="hex">#1B4332</div></div>
@@ -109,107 +183,141 @@ p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
   <div class="colour-swatch"><div class="swatch" style="background:#D4A853"></div><div class="name">Gold Light</div><div class="hex">#D4A853</div></div>
 </div>
 
-<h3>Usage Rules</h3>
+<h3>Usage rules</h3>
 <table class="usage-table">
-  <tr><th>Colour</th><th>Primary Use</th></tr>
-  <tr><td>Deep Forest</td><td>Primary backgrounds, headings, nav, footer base (#0D2818)</td></tr>
+  <tr><th>Colour</th><th>Primary use</th></tr>
+  <tr><td>Deep Forest</td><td>Primary backgrounds, headings, nav, footer base (a darker #0D2818)</td></tr>
   <tr><td>Emerald</td><td>Hover states, gradient midpoints, secondary backgrounds</td></tr>
   <tr><td>Sage</td><td>Accents, step numbers, hover borders, gradient endpoints</td></tr>
   <tr><td>Mint</td><td>Tags, badges, light accents, card backgrounds</td></tr>
   <tr><td>Warm Gold</td><td>Section labels, links, secondary CTAs, premium accents</td></tr>
-  <tr><td>Gold Light</td><td>Stats, hover gold states, dark-background gold text</td></tr>
+  <tr><td>Gold Light</td><td>Stats, hover gold states, gold text on dark backgrounds</td></tr>
 </table>
 
-<!-- TYPOGRAPHY -->
-<h2>3. Typography</h2>
-<p>Three typefaces create a clear hierarchy: a refined serif for headings, a clean sans-serif for body text, and a monospace for technical labels.</p>
+<div class="callout">
+<strong>Restraint.</strong> Gold is a highlight, not a workhorse. If a page has more than two or three gold elements competing for attention, pull some back to green. The eye should land on gold and know it matters (a teacher gate, a primary link, a key stat).
+</div>
+
+<h2>4. Typography</h2>
+<p>Three typefaces create a clear hierarchy: a refined serif for headings, a clean sans-serif for body, and a monospace for technical labels.</p>
 
 <div class="type-sample">
   <p style="font-size:11px;color:var(--warm-gold);letter-spacing:2px;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:8px">HEADINGS</p>
   <p class="type-heading" style="font-size:36px;color:var(--deep-forest);margin-bottom:4px">DM Serif Display</p>
-  <p style="font-size:13px;color:var(--text-muted)">Used for: page titles, section titles, stat numbers, blockquotes</p>
+  <p style="font-size:13px;color:var(--text-muted)">Used for: page titles, section titles, stat numbers, blockquotes.</p>
 </div>
 
 <div class="type-sample">
   <p style="font-size:11px;color:var(--warm-gold);letter-spacing:2px;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:8px">BODY</p>
   <p class="type-body" style="font-size:20px;color:var(--deep-forest);margin-bottom:4px;font-weight:500">Inter</p>
-  <p class="type-body" style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:4px">The quick brown fox jumps over the lazy dog. We help European businesses harness the power of AI while ensuring full compliance.</p>
-  <p style="font-size:13px;color:var(--text-muted)">Used for: body text, card descriptions, navigation, buttons (weights: 400, 500, 600, 700)</p>
+  <p class="type-body" style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:4px">We help organisations build AI that holds up under scrutiny. Designed for EU AI Act compliance from day one, not retrofitted after the fact.</p>
+  <p style="font-size:13px;color:var(--text-muted)">Used for: body text, card descriptions, navigation, buttons. Weights 400, 500, 600, 700.</p>
 </div>
 
 <div class="type-sample">
   <p style="font-size:11px;color:var(--warm-gold);letter-spacing:2px;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:8px">LABELS</p>
   <p class="type-mono" style="font-size:16px;color:var(--deep-forest);margin-bottom:4px">JetBrains Mono</p>
-  <p class="type-mono" style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--warm-gold);margin-bottom:4px">RESPONSIBLE AI CONSULTANCY</p>
-  <p style="font-size:13px;color:var(--text-muted)">Used for: section labels, category tags, technical identifiers (always uppercase, letter-spacing: 2px+)</p>
+  <p class="type-mono" style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--warm-gold);margin-bottom:4px">AI CONSULTING &middot; EU AI ACT ADVISORY</p>
+  <p style="font-size:13px;color:var(--text-muted)">Used for: section labels, category tags, technical identifiers. Always uppercase, letter-spacing 2px or more.</p>
 </div>
 
-<!-- BUTTONS -->
-<h2>4. Buttons</h2>
-<p>Noval uses three button styles to create a clear action hierarchy.</p>
+<h2>5. Voice</h2>
+<p>Noval's voice follows the three principles in Section 1. In practice that means writing that sounds like a practitioner who has done the work, not a vendor selling it. Specific over general, plain over ornate, claims that survive cross-examination. We are the trusted guide, not the lecturing professor and not the hype merchant.</p>
 
-<h3>Primary (Dark Green)</h3>
-<p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Used for the main CTA on light backgrounds. Always reads "Book a Consultation".</p>
-<div class="btn-row">
-  <span class="btn" style="background:#1B4332;color:#fff">Book a Consultation</span>
+<h3>Positioning lines (current)</h3>
+<table class="usage-table">
+  <tr><th>Context</th><th>Wording</th></tr>
+  <tr><td>Headline</td><td>"AI Built for Regulated Markets"</td></tr>
+  <tr><td>Category label</td><td>"AI Consulting &middot; EU AI Act Advisory"</td></tr>
+  <tr><td>Primary CTA</td><td>"Book a Consultation" (never "Book a Free Consultation")</td></tr>
+  <tr><td>Origin (long form)</td><td>Nohoval Cove / <em>Nuachabh&aacute;il</em>, used sparingly per Section 1</td></tr>
+</table>
+
+<div class="callout">
+<strong>Retired.</strong> The v1.0 tagline "Responsible AI Consultancy" and the headline "Navigate the EU AI Act with Confidence" are no longer used. Both were generic enough to describe any competitor. Do not reintroduce them.
 </div>
-
-<h3>White</h3>
-<p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Used for the main CTA on dark/gradient backgrounds.</p>
-<div class="btn-row">
-  <span class="btn" style="background:var(--deep-forest);padding:24px 40px;border-radius:12px"><span class="btn" style="background:#fff;color:#1B4332">Book a Consultation</span></span>
-</div>
-
-<h3>Gold (Secondary)</h3>
-<p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Used for all secondary actions — "Our Services", "View Our Services", etc.</p>
-<div class="btn-row">
-  <span class="btn" style="background:#B68D40;color:#fff">Our Services</span>
-</div>
-
-<!-- TONE OF VOICE -->
-<h2>5. Tone of Voice</h2>
-<p>Noval's voice is <strong>authoritative but approachable</strong>. We speak from deep enterprise experience but never talk down. We're the trusted guide, not the lecturing professor.</p>
 
 <div class="do-dont">
   <div class="do"><h4>Do</h4><ul>
-    <li>"Navigate the EU AI Act with Confidence"</li>
-    <li>"Battle-tested experience in delivering Responsible AI"</li>
-    <li>"Practical, business-led AI solutions"</li>
+    <li>"AI that holds up under scrutiny."</li>
+    <li>"Designed for EU AI Act compliance from day one, not retrofitted after the fact."</li>
+    <li>"The AI proposes; the teacher decides."</li>
+    <li>"Most products treat regulation as friction. We treat it as infrastructure."</li>
   </ul></div>
   <div class="dont"><h4>Don't</h4><ul>
-    <li>"We leverage cutting-edge synergies in the AI space"</li>
-    <li>"Our proprietary methodology disrupts the paradigm"</li>
-    <li>Overpromise or use hype language</li>
+    <li>"We leverage cutting-edge synergies in the AI space."</li>
+    <li>"Our proprietary methodology disrupts the paradigm."</li>
+    <li>"Navigate the EU AI Act with Confidence." (retired, generic)</li>
+    <li>Any of the hype words listed in principle 1.</li>
   </ul></div>
 </div>
 
-<h3>Key Phrases</h3>
-<table class="usage-table">
-  <tr><th>Context</th><th>Wording</th></tr>
-  <tr><td>Primary CTA</td><td>"Book a Consultation" (never "Book a Free Consultation")</td></tr>
-  <tr><td>Tagline</td><td>"Responsible AI Consultancy"</td></tr>
-  <tr><td>Origin story</td><td>Reference to Nohoval Cove, County Cork — nature meets innovation</td></tr>
-</table>
+<h3>Punctuation and mechanics</h3>
+<ul>
+<li><strong>No em dashes.</strong> They read as a tell-tale sign of AI-generated copy. Use full stops, commas, or colons instead. This applies to all published copy.</li>
+<li><strong>Irish and British spelling.</strong> Organise, programme, colour, centre.</li>
+<li><strong>Numbers are concrete and sourced.</strong> 70+ patents, $100M+ revenue delivered, 30+ enterprise AI solutions. Never "lots of" or "industry-leading".</li>
+</ul>
 
-<!-- IMAGERY -->
 <h2>6. Imagery</h2>
-<p>Photography should evoke the Irish coastal landscape — natural, uncrowded, contemplative. The hero image (Nohoval Cove) sets the standard: real locations, natural light, no stock-photo polish.</p>
+<p>Photography should evoke the Irish coastal landscape: natural, uncrowded, contemplative. The hero image (Nohoval Cove) sets the standard. Real locations, natural light, no stock-photo polish.</p>
 
 <div class="do-dont">
   <div class="do"><h4>Do</h4><ul>
     <li>Use Irish landscape photography with natural tones</li>
-    <li>Pair images with the green/gold palette</li>
+    <li>Pair images with the green and gold palette</li>
     <li>Use the wave mark as a watermark on thumbnails</li>
   </ul></div>
   <div class="dont"><h4>Don't</h4><ul>
-    <li>Use generic tech/corporate stock photos</li>
+    <li>Use generic tech or corporate stock photos</li>
     <li>Use images with heavy filters or artificial lighting</li>
-    <li>Overcrowd compositions — let the landscape breathe</li>
+    <li>Overcrowd compositions. Let the landscape breathe</li>
   </ul></div>
 </div>
 
+<h2>7. Applications</h2>
+<p>How the system shows up in practice. New surfaces inherit these patterns rather than inventing their own.</p>
+
+<h3>Buttons</h3>
+<p>Three styles create a clear action hierarchy.</p>
+
+<p style="font-size:13px;color:var(--text-muted);margin-bottom:8px"><strong>Primary (dark green).</strong> Main action on light backgrounds.</p>
+<div class="btn-row">
+  <span class="btn" style="background:#1B4332;color:#fff">Book a Consultation</span>
+</div>
+
+<p style="font-size:13px;color:var(--text-muted);margin:16px 0 8px"><strong>White.</strong> Main action on dark or gradient backgrounds.</p>
+<div class="btn-row">
+  <span class="btn" style="background:var(--deep-forest);padding:24px 40px;border-radius:12px"><span class="btn" style="background:#fff;color:#1B4332">Book a Consultation</span></span>
+</div>
+
+<p style="font-size:13px;color:var(--text-muted);margin:16px 0 8px"><strong>Gold (secondary).</strong> All secondary actions, for example "Get the Diotima whitepaper" or "View Our Services".</p>
+<div class="btn-row">
+  <span class="btn" style="background:#B68D40;color:#fff">Get the Diotima whitepaper</span>
+</div>
+
+<h3>Shared layout</h3>
+<p>Every page uses the same nav, footer, and closing CTA section. Keep them identical across pages so the site reads as one system. The footer always carries the same Company links (About, Case Studies, Insights, Contact) and contact details.</p>
+
+<h3>Reusable components</h3>
+<p>The seven-stage lifecycle diagram on the case study page is the reference pattern for process visuals: gold outlined icons, dark-green labels, and a highlighted gate where the critical decision happens. Reuse it for similar workflows rather than rebuilding from scratch.</p>
+
+<h2>8. Governance</h2>
+
+<h3>Source of truth</h3>
+<p>This spec lives in <code>brand/</code> in the noval-website repository. It supersedes any scattered notes, older PDFs, or design files. Where another document conflicts with this one, this one wins.</p>
+
+<h3>Versioning</h3>
+<ul>
+<li><strong>v1.0</strong> (April 2026): first complete spec.</li>
+<li><strong>v1.1</strong> (May 2026): reframed around the brand foundation and three principles; visual sections carried forward; voice updated to the current positioning and the old taglines retired.</li>
+</ul>
+
+<h3>Review and changes</h3>
+<p>Reviewed every six months, or sooner on a material change (a rebrand, a new service line, a shift in positioning). Owner: Eoin Lane. Propose changes by editing in the repository and having the owner approve before they go live. Keep the document short: if a section can be removed without loss, remove it (principle 3).</p>
+
 <div style="margin-top:80px;padding-top:24px;border-top:1px solid var(--light-grey);font-size:12px;color:var(--text-muted)">
-  Noval Consulting Brand Guidelines v1.0 — April 2026
+Noval Brand Guidelines v1.1. Last reviewed 28 May 2026.
 </div>
 
 </body>
