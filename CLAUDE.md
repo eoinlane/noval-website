@@ -12,10 +12,13 @@ Repo: https://github.com/eoinlane/noval-website
 - No external CSS frameworks (no Tailwind, Bootstrap, etc.)
 
 ## Pages
-- `index.html` — homepage
+- `index.html` — homepage (hero: "AI Built for Regulated Markets")
 - `about.html` — Eoin Lane bio
 - `contact.html` — Formspree contact form (ID: xlgpavqa)
-- `case-studies.html` — Diotima EdTech case study
+- `case-studies.html` — Diotima EdTech + BNY Mellon case studies; Diotima study has the 7-stage lifecycle diagram and Jonathan Dempsey (CEO) testimonial
+- `whitepaper.html` — gated Diotima whitepaper landing page (HubSpot form, portal 148581722, formId `fafba337-5c99-42b3-9858-9464627911b3`)
+- `whitepaper-thanks.html` — post-submit thank-you page with PDF download link (noindex)
+- `downloads/diotima-whitepaper.pdf` — the whitepaper PDF, served from the thank-you page
 
 ## Brand assets
 Brand guidelines and assets live in `brand/`:
@@ -76,14 +79,16 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 ## Marketing & content
 Q2 2026 bi-weekly content plan is active. Key upcoming work:
 - Insights section on website needs to become a real blog (articles, not just cards)
-- Lead capture: Mailchimp newsletter signup form to be embedded on homepage (in progress)
-- Diotima white paper (https://github.com/eoinlane/diotima-whitepaper) to be published and linked from site
-- Case study page needs improvement before Diotima white paper is promoted
+- Lead capture: whitepaper downloads go through a HubSpot form (see Business tools). Mailchimp newsletter signup for the homepage still to do
+- Diotima whitepaper is published: hosted publicly on Learnovate, and gated behind a HubSpot form on noval.ie/whitepaper.html (PDF in `downloads/`). Source repo: https://github.com/eoinlane/diotima-whitepaper
+- Companion whitepaper on operational metrics is planned (flagged in the paper's conclusion)
+- Case study page rebuilt (done): personal-voice intro, 7-stage lifecycle diagram, CEO testimonial, whitepaper CTA
 
 ## Business tools
-- CRM: Pipedrive (novalconsultancy.pipedrive.com) — configured with 6-stage pipeline ✅
+- CRM: HubSpot Free (portal 148581722, EU1 instance) — replaced Pipedrive (chose free tier over Pipedrive Lite at €24/seat/month for a 2-person team). Whitepaper form leads land here as "Lead"; submission notifications go to eoin@novalconsultancy.com. Old Pipedrive 6-stage pipeline being retired.
 - Email marketing: Mailchimp (eoin@novalconsultancy.com) — account created, setup in progress (audience name, address, signup form still to do)
 - Contact form: Formspree (ID: xlgpavqa) on contact.html
+- Whitepaper form: HubSpot (formId `fafba337-5c99-42b3-9858-9464627911b3`) on whitepaper.html, redirects to whitepaper-thanks.html
 - Calendar: Q2 content schedule added to Google Calendar (syncs to Apple Calendar) ✅
 - Task management: Apple Reminders
 
