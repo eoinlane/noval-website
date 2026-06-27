@@ -33,7 +33,10 @@ Brand guidelines and assets live in `brand/`:
   - `linkedin-banner-personal.html` / `linkedin-banner-personal.png` — personal profile banner (1584x396)
 - `signature/` — Outlook email signature (open in browser, Cmd+A, Cmd+C, paste into Outlook):
   - `noval-signature.html` — primary version, icon embedded as base64 (self-contained, works anywhere)
-  - `noval-signature-hosted.html` — backup version, icon loaded from `https://noval.ie/noval-icon.png` (use if a client strips the embedded image)
+  - `noval-signature-hosted.html` — backup version, icon loaded from `https://noval.ie/noval-icon-email.png` (84x84, use only if a client strips the embedded image)
+  - Links use emerald `#2D6A4F` underlined (gold `#B68D40` fails WCAG AA contrast on white); icon is a square 42x42
+
+The email-sized icon is `noval-icon-email.png` (84x84) at repo root — an 84px resize of `noval-icon.png` for the hosted signature variant (avoids fetching the 1.36 MB full-size icon).
 
 The original logo PNG is `noval-icon.png` (1024x1024). The favicon (`favicon.png`) is a 32x32 resize of this.
 
