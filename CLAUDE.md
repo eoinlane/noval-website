@@ -31,6 +31,9 @@ Brand guidelines and assets live in `brand/`:
 - `linkedin/` — LinkedIn banner assets:
   - `linkedin-banner.html` / `linkedin-banner-company.png` — company page banner (1584x396)
   - `linkedin-banner-personal.html` / `linkedin-banner-personal.png` — personal profile banner (1584x396)
+- `signature/` — Outlook email signature (open in browser, Cmd+A, Cmd+C, paste into Outlook):
+  - `noval-signature.html` — primary version, icon embedded as base64 (self-contained, works anywhere)
+  - `noval-signature-hosted.html` — backup version, icon loaded from `https://noval.ie/noval-icon.png` (use if a client strips the embedded image)
 
 The original logo PNG is `noval-icon.png` (1024x1024). The favicon (`favicon.png`) is a 32x32 resize of this.
 
