@@ -31,9 +31,9 @@ Brand guidelines and assets live in `brand/`:
 - `linkedin/` — LinkedIn banner assets:
   - `linkedin-banner.html` / `linkedin-banner-company.png` — company page banner (1584x396)
   - `linkedin-banner-personal.html` / `linkedin-banner-personal.png` — personal profile banner (1584x396)
-- `signature/` — Outlook email signature (open in browser, Cmd+A, Cmd+C, paste into Outlook):
-  - `noval-signature.html` — primary version, icon embedded as base64 (self-contained, works anywhere)
-  - `noval-signature-hosted.html` — backup version, icon loaded from `https://noval.ie/noval-icon-email.png` (84x84, use only if a client strips the embedded image)
+- `signature/` — Outlook email signatures (open in browser, Cmd+A, Cmd+C, paste into Outlook). Per person, two variants: `*-signature.html` (icon embedded as base64, self-contained, primary) and `*-signature-hosted.html` (icon from `https://noval.ie/noval-icon-email.png`, 84x84, backup only — many clients block remote images). Same layout for everyone; only name, role, and email change.
+  - `noval-signature.html` / `noval-signature-hosted.html` — Dr. Eoin Lane, Founder, Noval (`eoin@novalconsultancy.com`)
+  - `susan-kelly-signature.html` / `susan-kelly-signature-hosted.html` — Dr. Susan Kelly, Director, Noval (`susan@novalconsultancy.com`)
   - Links use emerald `#2D6A4F` underlined (gold `#B68D40` fails WCAG AA contrast on white); icon is a square 42x42
 
 The email-sized icon is `noval-icon-email.png` (84x84) at repo root — an 84px resize of `noval-icon.png` for the hosted signature variant (avoids fetching the 1.36 MB full-size icon).
