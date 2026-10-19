@@ -82,6 +82,12 @@ All pages share the same nav, footer, and CTA section pattern. Keep these consis
 - Contact: info@novalconsultancy.com | +353 83 027 0372
 - LinkedIn: https://www.linkedin.com/in/laneeoin/
 
+## Team
+Email is hosted on Microsoft 365 (domain `novalconsultancy.com`), separate from the `noval.ie` website host.
+- `eoin@novalconsultancy.com` — Dr. Eoin Lane, Founder
+- `susan@novalconsultancy.com` — Dr. Susan Kelly, Director
+- `arijit@novalconsultancy.com` — Arijit Sircar, AI Consultant (added 2026-10-19)
+
 ## Marketing & content
 Q2 2026 bi-weekly content plan is active. Key upcoming work:
 - Insights section on website needs to become a real blog (articles, not just cards)
